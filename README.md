@@ -5,4 +5,4 @@
 
 ---
 
-<p align="center">I'm not a pro webdev or a full-stacks dev, so this is my modest work. 🥽 So take those glasses. This will prevent your eyes to bleed</p>
+<p align="center">I'm not a pro webdev or a full-stacks dev, so this is my modest work. 🥽 So take those glasses. This will prevent your eyes to bleed.</p>

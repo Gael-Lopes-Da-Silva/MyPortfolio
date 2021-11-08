@@ -155,21 +155,6 @@ body{
 .competence{
     margin: 10px 0;
 }
-.progress_bar{
-    border: solid;
-    background-color: #202225;
-    border-color: #202225;
-    border-radius: 15px;
-    display: flex;
-    align-items: left;
-}
-.progress_bar div{
-    border-radius: 15px;
-}
-/* id */
-#progress_bar_icon{
-    max-width: 25px;
-}
 
 /* adaptation mobile */
 .menu_button {
@@ -204,16 +189,34 @@ body{
     .gauche{
         display: none;
     }
-    #progress_bar_icon{
-        max-width: 18px;
-    }
     .competences_container{
         margin: 3% 10%;
     }
+    .github_competence{
+        width: 400px;
+    }
     .menu_button {
         display: block;
-    }
+    } 
     .article_container{
         margin: 60px 6% 6% 6%;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .github_competence{
+        width: 300px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .github_competence{
+        width: 250px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .github_competence{
+        width: 150px;
     }
 }
