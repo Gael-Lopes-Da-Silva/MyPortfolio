@@ -31,4 +31,4 @@ function setTitle(extra) {
     document.title = capitalizeFirstLetter(getCurrentFileName()) + " - " + extra;
 }
 
-setTitle("Mon Site");
+setTitle("Portfolio");
