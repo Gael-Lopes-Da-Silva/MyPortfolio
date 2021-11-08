@@ -185,6 +185,11 @@ body{
     transform: rotate(45deg) translate(-8px, -8px);
     background-color: #ff0005;
 }
+@media all and (max-width: 1100px) {
+    .github_project {
+        width: 300px;
+    }
+}
 @media all and (max-width: 900px) {
     .gauche{
         display: none;
@@ -193,6 +198,9 @@ body{
         margin: 3% 10%;
     }
     .github_competence{
+        width: 400px;
+    }
+    .github_project {
         width: 400px;
     }
     .menu_button {
@@ -207,10 +215,16 @@ body{
     .github_competence{
         width: 300px;
     }
+    .github_project {
+        width: 300px;
+    }
 }
 
 @media all and (max-width: 550px) {
     .github_competence{
+        width: 250px;
+    }
+    .github_project {
         width: 250px;
     }
 }
@@ -219,10 +233,16 @@ body{
     .github_competence{
         width: 200px;
     }
+    .github_project {
+        width: 200px;
+    }
 }
 
 @media all and (max-width: 350px) {
     .github_competence{
+        width: 170px;
+    }
+    .github_project {
         width: 170px;
     }
 }
