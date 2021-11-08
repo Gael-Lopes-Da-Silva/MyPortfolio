@@ -6,5 +6,5 @@
 <p align="center">
 I'm not a pro webdev or a full-stacks dev, so this is my modest work.
 
-🥽 Take those glasses. This will prevent your eyes to bleed.
+🥽 Take those glasses. This will prevent your eyes to bleed
 </p>
