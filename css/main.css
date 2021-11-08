@@ -1,0 +1,219 @@
+body{
+    display: flex;
+}
+
+
+/* Toute la gauche du site */
+/* class */
+.gauche{
+    height: 100%;
+    width: 320px;
+    background-color: #2f3136;
+}
+.gauche_header{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gauche_header a{
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gauche_header a img{
+    margin: 0 10px;
+}
+.gauche_menu{
+    height: 80%;
+    padding: 0;
+    margin: 0;
+}
+.menu_container{
+    height: 100%;
+    margin: 0 6%;
+    display: block;
+    align-items: center;
+    align-content: center;
+    overflow-y: hidden;
+}
+.menu_container:hover{
+    overflow-y: auto;
+}
+.menu_container::-webkit-scrollbar{
+    width: 6px;
+}
+.menu_container::-webkit-scrollbar-thumb{
+    background-color: #202225;
+    border-radius: 15px;
+}
+.menu_container::-webkit-scrollbar-thumb:hover{
+    background-color: #1d1f22;
+}
+.menu_container a{
+    margin: 2px 0;
+    padding: 6px 0;
+    display: block;
+    font-size: 14px;
+    padding-left: 20px;
+    color: #8E9297;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.menu_container a:hover{
+    background-color: #34373c;
+    color: #DCDDDE;
+}
+.menu_container a span{
+    font-size: 15px;
+    color: #2f3136;
+    width: 30px;
+}
+.menu_container a:hover span{
+    color: #34373c;
+}
+.gauche_footer{
+    height: 10%;
+    background-color: #2f3136;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gauche_footer p{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #656870;
+    font-weight: 700;
+}
+.gauche_footer p span{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* id */
+#selected{
+    background-color: #393c43;
+    color: #FFFFFF;
+}
+#selected span{
+    color: #00ff12;
+}
+#emoji{
+    max-width: 17px;
+}
+
+
+/* Toute la droite du site */
+/* class */
+.droite{
+    height: 100%;
+    width: 100%;
+    background-color: #34373c;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+}
+.droite::-webkit-scrollbar{
+    width: 7px;
+    background-color: #2e3338;
+    border-radius: 10px;
+}
+.droite::-webkit-scrollbar-thumb{
+    background-color: #202225;
+    border-radius: 15px;
+}
+.article_container{
+    margin: 6%;
+    border: solid;
+    border-color: #2f3136;
+    background-color: #2f3136;
+    border-radius: 4px;
+}
+.article_container p{
+    color: #ffffff;
+    margin: 0;
+}
+.article_container h1{
+    color: #ffffff;
+    margin: 0;
+}
+.profil_container img{
+    max-width: 180px;
+    border-radius: 100%;
+    margin: 40px 0 0 0;
+}
+.competences_container{
+    padding: 15px;
+    margin: 3% 20%;
+    border-radius: 4px;
+    background-color: #34373c;
+}
+.competence{
+    margin: 10px 0;
+}
+.progress_bar{
+    border: solid;
+    background-color: #202225;
+    border-color: #202225;
+    border-radius: 15px;
+    display: flex;
+    align-items: left;
+}
+.progress_bar div{
+    border-radius: 15px;
+}
+/* id */
+#progress_bar_icon{
+    max-width: 25px;
+}
+
+/* adaptation mobile */
+.menu_button {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    margin: 9px 0 0 15px;
+    z-index: 1;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #393e44;
+    border-radius: 4px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 7px);
+    transform: rotate(-45deg) translate(-8px, 7px);
+    background-color: #ff0005;
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: #ff0005;
+}
+@media all and (max-width: 900px) {
+    .gauche{
+        display: none;
+    }
+    #progress_bar_icon{
+        max-width: 18px;
+    }
+    .competences_container{
+        margin: 3% 10%;
+    }
+    .menu_button {
+        display: block;
+    }
+    .article_container{
+        margin: 60px 6% 6% 6%;
+    }
+}
