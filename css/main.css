@@ -209,7 +209,7 @@ body{
     }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 550px) {
     .github_competence{
         width: 250px;
     }
@@ -217,6 +217,12 @@ body{
 
 @media all and (max-width: 400px) {
     .github_competence{
-        width: 150px;
+        width: 200px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .github_competence{
+        width: 170px;
     }
 }
