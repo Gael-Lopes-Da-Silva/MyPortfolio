@@ -94,6 +94,10 @@ body{
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
 }
+.emoji{
+    max-width: 17px;
+}
+
 /* id */
 #selected{
     background-color: #393c43;
@@ -101,9 +105,6 @@ body{
 }
 #selected span{
     color: #00ff12;
-}
-#emoji{
-    max-width: 17px;
 }
 
 
@@ -149,13 +150,15 @@ body{
 .competences_container{
     padding: 15px;
     margin: 3% 20%;
-    border: solid;
-    border-radius: 4px;
-    border-color: #2f3136;
-    background-color: rgba(52, 55, 60, 0.8);
 }
-.competence{
+.competences_container p{
     margin: 10px 0;
+}
+.projects_container p{
+    margin: 10px 0;
+}
+.projects_container img{
+    margin: 5px 0;
 }
 
 /* adaptation mobile */
@@ -187,11 +190,6 @@ body{
     transform: rotate(45deg) translate(-8px, -8px);
     background-color: #ff0005;
 }
-@media all and (max-width: 1100px) {
-    .github_project {
-        width: 300px;
-    }
-}
 @media all and (max-width: 900px) {
     .gauche{
         display: none;
@@ -212,8 +210,7 @@ body{
         margin: 60px 6% 6% 6%;
     }
 }
-
-@media all and (max-width: 750px) {
+@media(max-width: 750px) {
     .github_competence{
         width: 300px;
     }
@@ -221,8 +218,7 @@ body{
         width: 300px;
     }
 }
-
-@media all and (max-width: 550px) {
+@media(max-width: 550px) {
     .github_competence{
         width: 250px;
     }
@@ -230,8 +226,7 @@ body{
         width: 250px;
     }
 }
-
-@media all and (max-width: 400px) {
+@media(max-width: 400px) {
     .github_competence{
         width: 200px;
     }
@@ -239,8 +234,7 @@ body{
         width: 200px;
     }
 }
-
-@media all and (max-width: 350px) {
+@media(max-width: 350px) {
     .github_competence{
         width: 170px;
     }
