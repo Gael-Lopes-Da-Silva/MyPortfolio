@@ -1,34 +1,11 @@
-// fonctions //
-function getCurrentFileName() {
-    var path = window.location.pathname;
-    var file = path.split("/").pop();
-    return fileName = file.split(".").shift();
-}
+const openMenu = document.querySelector("#show_menu")
+const hideMenu = document.querySelector("#hide_menu")
+const sideMenu = document.querySelector("#nav_menu")
 
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
+openMenu.addEventListener("click", function() {
+  sideMenu.classList.add("active")
+})
 
-activated = false
-function menuButtonScript(x) {
-    x.classList.toggle("change");
-
-    if (activated == false) {
-        document.getElementsByClassName("droite")[0].style.display = "none";
-        document.getElementsByClassName("gauche")[0].style.display = "block";
-        document.getElementsByClassName("gauche")[0].style.width = "100%";
-        activated = true
-    } else {
-        document.getElementsByClassName("gauche")[0].style.display = "none";
-        document.getElementsByClassName("droite")[0].style.display = "block";
-        document.getElementsByClassName("gauche")[0].style.width = "320px";
-        activated = false
-    }
-
-}
-
-function setTitle(extra) {
-    document.title = capitalizeFirstLetter(getCurrentFileName()) + " - " + extra;
-}
-
-setTitle("Portfolio");
+hideMenu.addEventListener("click", function() {
+  sideMenu.classList.remove("active")
+})
