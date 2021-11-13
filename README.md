@@ -12,5 +12,6 @@
 ### TODO
 - [X] Create a button to turn the website darker or lighter.
 - [X] Create a cookie system to save the website color change.
+- [X] Add a custom error 404 page.
 - [ ] Make my CV for the portfolio.
 - [X] Make a better organization for the github projects.
