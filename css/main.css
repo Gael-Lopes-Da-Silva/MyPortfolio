@@ -305,6 +305,9 @@ body.dark .repo_section img:hover {
 }
 #error_container img {
   width: 300px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 #error_container h1 {
   font-size: 70px;
