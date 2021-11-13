@@ -9,7 +9,8 @@
   text-decoration: none;
   font-family: 'Cascadia Code', sans-serif;
 }
-body {
+html, body {
+  margin: 0;
   width: 100%;
   height: 100%;
   background-color: white;
@@ -56,7 +57,6 @@ header h1 {
 }
 
 /* nav menu */
-
 #nav_menu {
   display: flex;
   flex-direction: column;
@@ -83,7 +83,7 @@ header h1 {
   justify-content: center;
 }
 #navbar_toggle h1 {
-  font-size: 25px;
+  font-size: 20px;
 }
 .menu_bar {
   position: absolute;
@@ -102,6 +102,7 @@ header h1 {
   padding: 7px 30px;
   margin: 2px 0;
   border-radius: 5px;
+  font-size: 20px;
 }
 .nav_section a:hover {
   background-color: whitesmoke;
@@ -116,15 +117,18 @@ header h1 {
 main {
   width: 100%;
   height: 100%;
+}
+
+.profil_container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .main_image {
   padding: 20px;
-  margin: 90px 0 0 0;
 }
 .main_image img {
   width: 300px;
@@ -171,31 +175,61 @@ main {
 
 /* projects seciton */
 #repo_container {
-  margin: 100px 0 0 0;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 .repo_section {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
-/* .repo_section a {
-}
 .repo_section img {
-} */
+  transition: 850ms;
+}
+.repo_section img:hover {
+  box-shadow: 0px 2px 10px 0px rgba(100, 100, 111, 0.35);
+  transition: 350ms
+}
 
 /* at selection */
 ::selection {
   background-color: black;
   color: white;
 }
+::-moz-selection {
+  background-color: black;
+  color: white;
+}
 
 /* responsivness */
+@media all and (max-height: 700px) {
+  .profil_container {
+    justify-content: start;
+  }
+  .main_image {
+    margin: 90px 0 0 0;
+  }
+  #repo_container {
+    align-items: start;
+  }
+  .repo_section {
+    margin: 100px 0 0 0;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  #repo_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .repo_section {
+    margin: 100px 0 0 0;
+  }
+}
 @media all and (max-width: 800px) {
   header h1{
     font-size: 30px;
