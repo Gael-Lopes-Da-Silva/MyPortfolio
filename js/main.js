@@ -1,34 +1,61 @@
-// fonctions //
-function getCurrentFileName() {
-    var path = window.location.pathname;
-    var file = path.split("/").pop();
-    return fileName = file.split(".").shift();
+const openMenu = document.querySelector("#show_menu");
+const hideMenu = document.querySelector("#hide_menu");
+const sideMenu = document.querySelector("#nav_menu");
+const lightSwitch = document.querySelector("#switch_input");
+const body = document.querySelector("body");
+var isMenuOpen = false;
+
+function toggleMenu() {
+  openMenu.addEventListener("click", function() {
+    sideMenu.classList.add("active");
+    isMenuOpen = true;
+  })
+
+  hideMenu.addEventListener("click", function() {
+    sideMenu.classList.remove("active");
+    isMenuOpen = false;
+  })
 }
 
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-activated = false
-function menuButtonScript(x) {
-    x.classList.toggle("change");
-
-    if (activated == false) {
-        document.getElementsByClassName("droite")[0].style.display = "none";
-        document.getElementsByClassName("gauche")[0].style.display = "block";
-        document.getElementsByClassName("gauche")[0].style.width = "100%";
-        activated = true
+function toggleLight() {
+  lightSwitch.addEventListener("click", function() {
+    if(lightSwitch.checked == true) {
+      body.classList.add("dark");
+      createCookie("isDarkModeToggle", "true")
+      if(isMenuOpen) {sideMenu.classList.remove("active");}
     } else {
-        document.getElementsByClassName("gauche")[0].style.display = "none";
-        document.getElementsByClassName("droite")[0].style.display = "block";
-        document.getElementsByClassName("gauche")[0].style.width = "320px";
-        activated = false
+      body.classList.remove("dark");
+      createCookie("isDarkModeToggle", "false")
+      if(isMenuOpen) {sideMenu.classList.remove("active");}
     }
-
+  })
 }
 
-function setTitle(extra) {
-    document.title = capitalizeFirstLetter(getCurrentFileName()) + " - " + extra;
+function createCookie(name, value, days) {
+  if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      var expire = "; expire=" + date.toGMTString();
+  } else {var expire = ""}
+
+  document.cookie = name + "=" + value + expire + "; path=/";
 }
 
-setTitle("Portfolio");
+function getCookieValue(name) {
+  var re = new RegExp(name + "=([^;]+)");
+  var value = re.exec(document.cookie);
+  return (value != null) ? unescape(value[1]) : null;
+}
+
+function isDarkModeToggle() {
+  if (getCookieValue("isDarkModeToggle") == "false"){
+    body.classList.remove("dark");
+  } else if (getCookieValue("isDarkModeToggle") == "true") {
+    body.classList.add("dark");
+    lightSwitch.checked = true;
+  }
+}
+
+isDarkModeToggle()
+toggleLight()
+toggleMenu()
