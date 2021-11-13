@@ -1,11 +1,10 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
 
 /* body */
-* {
+*, *:after, *:before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: black;
   text-decoration: none;
   font-family: 'Cascadia Code', sans-serif;
 }
@@ -13,7 +12,14 @@ html, body {
   margin: 0;
   width: 100%;
   height: 100%;
+  color: black;
   background-color: white;
+}
+
+/* body dark mode */
+body.dark {
+  background-color: rgb(27, 27, 27);
+  color: white;
 }
 
 /* header */
@@ -35,7 +41,51 @@ header {
 }
 header h1 {
   font-size: 45px;
+  color: black;
 }
+
+/* header dark mode */
+body.dark header {
+  color: white;
+  background-color: rgb(27, 27, 27);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+}
+body.dark header h1 {
+  color: white;
+}
+body.dark .single_bar {
+  background-color: white;
+}
+
+/* light switcher */
+#light_switch {
+	display: flex;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+  right: 10px;
+	cursor: pointer;
+}
+#switch_input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+#switch {
+	width: 70px;
+	height: 40px;
+  background-color: white;
+	border: 6px solid black;
+	border-radius: 99em;
+	cursor: pointer;
+  -webkit-transition: .4s;
+  transition: 400ms;
+}
+input:checked + #switch {
+  background-color: rgb(17, 17, 17);
+  border: 6px solid white;
+}
+
 
 /* navbar */
 #navbar {
@@ -65,7 +115,7 @@ header h1 {
   background-color: white;
   box-shadow: 0px 2px 10px 0px rgba(100, 100, 111, 0.35);
   transition: 850ms;
-
+  
   position: fixed;
   top: 0;
   left: -100%;
@@ -74,23 +124,22 @@ header h1 {
   left: 0;
   transition: 350ms;
 }
-
 #navbar_toggle {
   width: 100%;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 0;
 }
 #navbar_toggle h1 {
+  color: black;
   font-size: 20px;
 }
 .menu_bar {
   position: absolute;
   left: 15px;
-  color: red;
 }
-
 .nav_section {
   width: 100%;
   display: flex;
@@ -99,6 +148,7 @@ header h1 {
   padding: 0 10px;
 }
 .nav_section a {
+  color: black;
   padding: 7px 30px;
   margin: 2px 0;
   border-radius: 5px;
@@ -111,6 +161,28 @@ header h1 {
 #selected {
   color: white;
   background-color: black;
+}
+
+/* nav menu dark mode */
+body.dark #nav_menu {
+  background-color: rgb(27, 27, 27);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+}
+body.dark .single_bar {
+  background-color: white;
+}
+body.dark #navbar_toggle h1{
+  color: white;
+}
+body.dark .nav_section a {
+  color: white;
+}
+body.dark .nav_section a:hover {
+  background-color: rgb(36, 36, 36);
+}
+body.dark #selected {
+  color: black;
+  background-color: white;
 }
 
 /* main */
@@ -173,6 +245,18 @@ main {
   width: 60px;
 }
 
+/* main dark mode */
+body.dark .main_image img {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+}
+body.dark .main_socials a {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+}
+body.dark .main_socials img {
+  z-index: 1;
+  filter: invert(100%);
+}
+
 /* projects seciton */
 #repo_container {
   width: 100%;
@@ -193,6 +277,9 @@ main {
   box-shadow: 0px 2px 10px 0px rgba(100, 100, 111, 0.35);
   transition: 350ms
 }
+body.dark .repo_section img:hover {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+}
 
 /* at selection */
 ::selection {
@@ -202,6 +289,14 @@ main {
 ::-moz-selection {
   background-color: black;
   color: white;
+}
+body.dark ::selection {
+  background-color: white;
+  color: black;
+}
+body.dark ::-moz-selection {
+  background-color: white;
+  color: black;
 }
 
 /* responsivness */
