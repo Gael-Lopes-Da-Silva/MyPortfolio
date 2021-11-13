@@ -12,4 +12,4 @@
 ### TODO
 - [ ] Create a button to turn the website darker or lighter.
 - [ ] Make my CV for the portfolio.
-- [ ] Make a better organization for the github projects.
+- [X] Make a better organization for the github projects.
