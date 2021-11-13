@@ -6,3 +6,10 @@
 ---
 
 <p align="center">💼 This is my portfolio. I'm not a profesional so it can contain code that can hurt your eyes.</p>
+
+---
+
+### TODO
+- [ ] Create a button to turn the website darker or lighter.
+- [ ] Make my CV for the portfolio.
+- [ ] Make a better organization for the github projects.
