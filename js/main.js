@@ -35,7 +35,7 @@ function createCookie(name, value, days) {
   if (days) {
       var date = new Date();
       date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-      var expire = "; expire=" + date.toGMTString();
+      var expire = "; expire=Tue, 19 Jan 2038 03:14:07 UTC";
   } else {var expire = ""}
 
   document.cookie = name + "=" + value + expire + "; path=/";
