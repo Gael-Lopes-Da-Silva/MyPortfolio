@@ -21,18 +21,14 @@ function toggleLight() {
   lightSwitch.addEventListener("click", function() {
     if(lightSwitch.checked == true) {
       body.classList.add("dark");
-      createCookie("isDarkModeToggle", "true")
+      document.cookie = "isDarkModeToggle=true; max-age=864000000; path=/";
       if(isMenuOpen) {sideMenu.classList.remove("active");}
     } else {
       body.classList.remove("dark");
-      createCookie("isDarkModeToggle", "false")
+      document.cookie = "isDarkModeToggle=false; max-age=864000000; path=/";
       if(isMenuOpen) {sideMenu.classList.remove("active");}
     }
   })
-}
-
-function createCookie(name, value) {
-  document.cookie = name + "=" + value + "; expire=Tue, 19 Jan 2038 03:14:07 UTC" + "; path=/";
 }
 
 function getCookieValue(name) {
