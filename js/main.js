@@ -17,7 +17,7 @@ function toggleMenu() {
   })
 }
 
-function toggleLight() {
+function togglesDarkMode() {
   lightSwitch.addEventListener("click", function() {
     if(lightSwitch.checked == true) {
       body.classList.add("dark");
@@ -47,5 +47,5 @@ function isDarkModeToggle() {
 }
 
 isDarkModeToggle()
-toggleLight()
+togglesDarkMode()
 toggleMenu()

@@ -234,38 +234,23 @@ main {
 
   margin: 70px 0 0 0;
 }
-.main_socials h3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 35px;
-}
 .main_socials a {
   margin: 0 20px;
   padding: 10px;
-  border-radius: 50px;
-  -webkit-transition: 850s;
-  transition: 850ms;
-}
-.main_socials a:hover {
+  color: black;
   box-shadow: 0px 2px 10px 0px rgba(100, 100, 111, 0.35);
-  -webkit-transition: 350s;
-  transition: 350ms
+  font-size: 32px;
+  border-radius: 50px;
 }
-.main_socials img {
-  display: flex;
-  width: 60px;
-}
+
 
 /* main dark mode */
 body.dark .main_image img {
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
 }
-body.dark .main_socials a:hover {
+body.dark .main_socials a {
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
-}
-body.dark .main_socials img {
-  filter: invert(100%);
+  color: white;
 }
 
 /* projects seciton */
@@ -374,6 +359,15 @@ body.dark ::-moz-selection {
   .main_image img {
     width: 250px;
   }
+  #error_container img {
+    width: 250px;
+  }
+  #error_container h1 {
+    font-size: 65px;
+  }
+  #error_container p {
+    font-size: 25px;
+  }
 }
 @media(max-width: 600px) {
   header h1 {
@@ -385,11 +379,14 @@ body.dark ::-moz-selection {
   .main_infos p {
     font-size: 20px;
   }
-  .main_socials h3 {
+  .main_socials a {
     font-size: 30px;
   }
-  .main_socials img {
-    width: 55px;
+  #error_container h1 {
+    font-size: 60px;
+  }
+  #error_container p {
+    font-size: 20px;
   }
 }
 @media(max-width: 500px) {
@@ -411,11 +408,14 @@ body.dark ::-moz-selection {
   .main_socials {
     margin: 130px 0 0 0;
   }
-  .main_socials h3 {
+  .main_socials a {
     font-size: 25px;
   }
-  .main_socials img {
-    width: 50px;
+  #error_container h1 {
+    font-size: 55px;
+  }
+  #error_container p {
+    font-size: 15px;
   }
 }
 @media(max-width: 400px) {
@@ -428,10 +428,7 @@ body.dark ::-moz-selection {
   .main_infos p {
     font-size: 10px;
   }
-  .main_socials h3 {
+  .main_socials a {
     font-size: 20px;
-  }
-  .main_socials img {
-    width: 45px;
   }
 }
