@@ -1,4 +1,4 @@
-<h3 align="center">👋 Hi! This is my portfolio</h3>
+<h3 align="center">Here is my portfolio</h3>
 <p align="center">
   <a href="https://gael-lopes-da-silva.github.io/MyPortfolio/">Website</a>
 </p>
