@@ -6,5 +6,5 @@
 
 ---
 
-### TODO
+### 🔥 TODO
 - [ ] Make my CV for the portfolio.
