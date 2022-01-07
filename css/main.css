@@ -219,12 +219,12 @@ main {
 
 /* at selection */
 ::selection {
-  background-color: black;
-  color: white;
+  background-color: whitesmoke;
+  color: rgb(30, 30, 30);
 }
 ::-moz-selection {
-  background-color: black;
-  color: white;
+  background-color: whitesmoke;
+  color: rgb(30, 30, 30);
 }
 
 /* responsivness */
