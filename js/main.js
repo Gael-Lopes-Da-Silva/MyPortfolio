@@ -64,6 +64,32 @@ function toggleResume() {
     resumeContainer.classList.remove("change");
     resumeGb.classList.remove("display");
   })
+
+  document.addEventListener("keydown", function(event) {
+    if (document.activeElement == resumeFrButton && event.key == "Enter") {
+      resumeSection.classList.add("hide");
+      resumeContainer.classList.add("change");
+      resumeFr.classList.add("display");
+    }
+
+    if (document.activeElement == resumeFrReturn && event.key == "Enter") {
+      resumeSection.classList.remove("hide");
+      resumeContainer.classList.remove("change");
+      resumeFr.classList.remove("display");
+    }
+
+    if (document.activeElement == resumeGbButton && event.key == "Enter") {
+      resumeSection.classList.add("hide");
+      resumeContainer.classList.add("change");
+      resumeGb.classList.add("display");
+    }
+
+    if (document.activeElement == resumeGbReturn && event.key == "Enter") {
+      resumeSection.classList.remove("hide");
+      resumeContainer.classList.remove("change");
+      resumeGb.classList.remove("display");
+    }
+  })
 }
 
 toggleMenu()
