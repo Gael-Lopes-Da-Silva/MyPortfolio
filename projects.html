@@ -18,7 +18,7 @@
   <!-- header of the website: menu button + title + dark bome button -->
   <header>
     <div id="navbar">
-      <label id="show_menu">
+      <label id="show_menu" tabindex="1">
         <div class="bar">
           <span class="single_bar"></span>
           <span class="single_bar"></span>
@@ -26,7 +26,7 @@
         </div>
       </label>
     </div>
-    <a href=""><h1>My Projects</h1></a>
+    <a href="./index.html" tabindex="0"><h1>My Projects</h1></a>
   </header>
 
   <!-- main part of the website -->
@@ -53,9 +53,9 @@
       </label>
     </div>
     <div class="nav_section">
-      <a href="index.html">Home</a>
-      <a href="#" id="selected">Projects</a>
-      <a href="resume.html">Resume</a>
+      <a href="index.html" class="unselected" tabindex="-1">Home</a>
+      <a href="#" id="selected" tabindex="-1">Projects</a>
+      <a href="resume.html" class="unselected" tabindex="-1">Resume</a>
     </div>
   </nav>
   
