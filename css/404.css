@@ -17,19 +17,19 @@
 }
 #error_container h1 {
   font-size: 70px;
-  margin: 40px 0 0 0;
+  margin-top: 40px;
 }
 #error_container p {
   font-size: 30px;
 }
 
 /* vertical responsivness */
-@media all and (max-height: 700px) {
+@media all and (max-height: 600px) {
   #error_container {
     justify-content: start;
   }
   #error_container img {
-    margin: 100px 0 0 0;
+    margin-top: 100px;
   }
 }
 
