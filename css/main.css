@@ -141,6 +141,9 @@ main {
   background-color: whitesmoke;
   border-radius: 50px;
 }
+.bar:active .single_bar {
+  border-top: 3px solid #490b35;
+}
 
 /* at selection */
 ::selection {
