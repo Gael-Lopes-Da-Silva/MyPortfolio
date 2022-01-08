@@ -156,7 +156,6 @@ main {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-  user-drag: none;
   -webkit-user-drag: none;
 }
 
@@ -186,7 +185,6 @@ main {
   background-color: #773366;
   border-bottom: 6px solid #680E4B;
   border-radius: 50px;
-  user-drag: none;
   -webkit-user-drag: none;
 }
 .main_socials img:active {
@@ -214,7 +212,6 @@ main {
 .repo_section img {
   border-radius: 15px;
   border-bottom: 5px solid #d4c7b7;
-  user-drag: none;
   -webkit-user-drag: none;
 }
 .repo_section img:active {
@@ -241,6 +238,7 @@ main {
   cursor: pointer;
   border-bottom: 6px solid #d4c7b7;
   border-radius: 20px;
+  -webkit-user-drag: none;
 }
 #resume_section img:active {
   border-bottom: 2px solid #d4c7b7;
@@ -269,6 +267,7 @@ main {
   border-radius: 17px;
   padding: 7px;
   margin: 0 0 20px 0;
+  user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
 }
@@ -299,6 +298,7 @@ main {
   border-radius: 17px;
   padding: 7px;
   margin: 0 0 20px 0;
+  user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
 }
