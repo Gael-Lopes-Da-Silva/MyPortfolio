@@ -349,6 +349,7 @@ html::-webkit-scrollbar-thumb:hover {
   width: 300px;
   -moz-user-select: none;
   -webkit-user-select: none;
+  -webkit-user-drag: none;
   user-select: none;
 }
 #error_container h1 {
