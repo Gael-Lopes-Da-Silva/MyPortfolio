@@ -80,6 +80,10 @@ main {
   flex-direction: column;
   margin: 10px 0;
   padding: 0 10px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .unselected {

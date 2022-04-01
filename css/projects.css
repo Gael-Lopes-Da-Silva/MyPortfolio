@@ -16,6 +16,9 @@
   padding: 20px 50px;
   border-radius: 15px;
   margin: 20px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .repo_section img {
   border-radius: 15px;

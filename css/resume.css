@@ -12,6 +12,9 @@
   background-color: #FCECD8;
   border-bottom: 6px solid #d4c7b7;
   padding: 40px 50px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 #resume_section img {
   width: 170px;

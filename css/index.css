@@ -10,14 +10,14 @@
 }
 .main_image {
   padding: 20px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .main_image img {
   width: 300px;
   border-radius: 250px;
   border-bottom: 7px solid #680E4B;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
   -webkit-user-drag: none;
 }
 
