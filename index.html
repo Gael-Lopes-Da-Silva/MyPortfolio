@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Home</title>
-  <meta name="author" content="Gaël Lopes Da Silva">
-  <meta name="description" content="👋 Here is my portfolio.">
+    <title>Home</title>
+    <meta name="author" content="Gaël Lopes Da Silva">
+    <meta name="description" content="👋 Here is my portfolio.">
 
-  <meta property="og:title" content="My Portfolio">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://gael-lopes-da-silva.github.io/MyPortfolio/">
-  <meta property="og:description" content="👋 Here is my portfolio.">
+    <meta property="og:title" content="My Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gael-lopes-da-silva.github.io/MyPortfolio/">
+    <meta property="og:description" content="👋 Here is my portfolio.">
 
-  <link rel="icon" href="img/icon/icon.ico">
-  <link rel="icon" href="img/icon/icon.png" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/icon/icon.png">
-  
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/icon/icon.ico">
+    <link rel="icon" href="img/icon/icon.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/icon/icon.png">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
 
-  <!-- header of the website: menu button + title + dark home button -->
-  <header>
-    <div id="navbar">
-      <label id="show_menu" tabindex="1">
-        <div class="bar">
-          <span class="single_bar"></span>
-          <span class="single_bar"></span>
-          <span class="single_bar"></span>
+    <!-- header of the website: menu button + title + dark home button -->
+    <header>
+        <div id="navbar">
+            <label id="show_menu" tabindex="1">
+                <div class="bar">
+                    <span class="single_bar"></span>
+                    <span class="single_bar"></span>
+                    <span class="single_bar"></span>
+                </div>
+            </label>
         </div>
-      </label>
-    </div>
-    <a href="./index.html" tabindex="0"><h1>My Portfolio</h1></a>
-  </header>
-
-  <!-- main part of the website -->
-  <main>
-    <div class="profil_container">
-      <div class="main_image">
-        <img src="img/profil/profil.png" alt="Profil image">
-      </div>
-      <div class="main_infos">
-        <h3>Gaël Lopes Da Silva</h3>
-        <p>18 years old</p>
-      </div>
-      <div class="main_socials">
-        <a href="https://github.com/Gael-Lopes-Da-Silva" target="_blank">
-          <img src="./img/icon/git.png" alt="github">
+        <a href="./index.html" tabindex="0">
+            <h1>My Portfolio</h1>
         </a>
-      </div>  
-    </div>
-  </main>
-  
-  <!-- navigation menu of the website -->
-  <nav id="nav_menu">
-    <div id="navbar_toggle">
-      <label class="menu_bar" id="hide_menu">
-        <div class="bar">
-          <span class="single_bar"></span>
-          <span class="single_bar"></span>
-          <span class="single_bar"></span>
-        </div>
-      </label>
-    </div>
-    <div class="nav_section">
-      <a href="#" id="selected" tabindex="-1">Home</a>
-      <a href="projects.html" class="unselected" tabindex="-1">Projects</a>
-      <a href="resume.html" class="unselected" tabindex="-1">Resume</a>
-    </div>
-  </nav>
+    </header>
 
-  <script src="js/main.js"></script>
+    <!-- main part of the website -->
+    <main>
+        <div class="profil_container">
+            <div class="main_image">
+                <img src="img/profil/profil.png" alt="Profil image">
+            </div>
+            <div class="main_infos">
+                <h3>Gaël Lopes Da Silva</h3>
+                <p>18 years old</p>
+            </div>
+            <div class="main_socials">
+                <a href="https://github.com/Gael-Lopes-Da-Silva" target="_blank">
+                    <img src="./img/icon/git.png" alt="github">
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- navigation menu of the website -->
+    <nav id="nav_menu">
+        <div id="navbar_toggle">
+            <label class="menu_bar" id="hide_menu">
+                <div class="bar">
+                    <span class="single_bar"></span>
+                    <span class="single_bar"></span>
+                    <span class="single_bar"></span>
+                </div>
+            </label>
+        </div>
+        <div class="nav_section">
+            <a href="#" id="selected" tabindex="-1">Home</a>
+            <a href="projects.html" class="unselected" tabindex="-1">Projects</a>
+            <a href="resume.html" class="unselected" tabindex="-1">Resume</a>
+        </div>
+    </nav>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -2,198 +2,216 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
 
 /* body */
-*, *:after, *:before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  font-family: 'Cascadia Code', sans-serif;
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Cascadia Code', sans-serif;
 }
-html, body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  color: whitesmoke;
-  background-color: #7e1b5e;
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    background-color: #7e1b5e;
 }
 
 /* header */
 header {
-  width: 100%;
-  height: 80px;
-  background-color: #6e1953;
-  border-bottom: 5px solid #680E4B;
+    width: 100%;
+    height: 80px;
+    background-color: #6e1953;
+    border-bottom: 5px solid #680E4B;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 
-  position: fixed;
+    position: fixed;
 }
+
 header h1 {
-  font-size: 45px;
-  color: whitesmoke;
+    font-size: 45px;
+    color: whitesmoke;
 }
 
 /* main */
 main {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 /* nav menu */
 #nav_menu {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 280px;
-  background-color: #6e1953;
-  border-right: 5px solid #680E4B;
-  -webkit-transition: 850s;
-  transition: 850ms;
-  
-  position: fixed;
-  top: 0;
-  left: -100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 280px;
+    background-color: #6e1953;
+    border-right: 5px solid #680E4B;
+    -webkit-transition: 850s;
+    transition: 850ms;
+
+    position: fixed;
+    top: 0;
+    left: -100%;
 }
+
 #navbar_toggle {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
 }
+
 #navbar_toggle label {
-  cursor: pointer;
-  position: absolute;
-  left: 15px;
-  top: 19px;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    top: 19px;
 }
+
 .nav_section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0;
-  padding: 0 10px;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-user-drag: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 0 10px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .unselected {
-  color: whitesmoke;
-  padding: 7px 30px;
-  text-align: center;
-  margin: 2px 0;
-  border-radius: 5px;
-  font-size: 23px;
+    color: whitesmoke;
+    padding: 7px 30px;
+    text-align: center;
+    margin: 2px 0;
+    border-radius: 5px;
+    font-size: 23px;
 }
+
 .unselected:hover {
-  background-color: #680E4B;
-  cursor: pointer;
+    background-color: #680E4B;
+    cursor: pointer;
 }
+
 .unselected:active {
-  border-top: 4px solid #490b35;
-  padding-bottom: 3px;
+    border-top: 4px solid #490b35;
+    padding-bottom: 3px;
 }
 
 #selected {
-  color: whitesmoke;
-  padding: 7px 30px;
-  text-align: center;
-  margin: 2px 0;
-  border-radius: 5px;
-  font-size: 23px;
-  background-color: #550c3e;
-  border-bottom: 5px solid #490b35;
+    color: whitesmoke;
+    padding: 7px 30px;
+    text-align: center;
+    margin: 2px 0;
+    border-radius: 5px;
+    font-size: 23px;
+    background-color: #550c3e;
+    border-bottom: 5px solid #490b35;
 }
+
 #selected:active {
-  border-bottom: 2px solid #490b35;
-  margin-top: 5px;
+    border-bottom: 2px solid #490b35;
+    margin-top: 5px;
 }
 
 #nav_menu.active {
-  left: 0;
-  -webkit-transition: 350s;
-  transition: 350ms;
+    left: 0;
+    -webkit-transition: 350s;
+    transition: 350ms;
 }
 
 /* navbar button */
 #navbar {
-  position: absolute;
-  left: 15px;
+    position: absolute;
+    left: 15px;
 }
+
 #navbar label {
-  cursor: pointer;
+    cursor: pointer;
 }
+
 .bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
 .single_bar {
-  margin: 2.5px;
-  height: 7px;
-  width: 45px;
-  background-color: whitesmoke;
-  border-radius: 50px;
+    margin: 2.5px;
+    height: 7px;
+    width: 45px;
+    background-color: whitesmoke;
+    border-radius: 50px;
 }
+
 .bar:active .single_bar {
-  border-top: 3px solid #490b35;
+    border-top: 3px solid #490b35;
 }
 
 /* at selection */
-::selection {
-  background-color: whitesmoke;
-  color: rgb(30, 30, 30);
-}
+::selection,
 ::-moz-selection {
-  background-color: whitesmoke;
-  color: rgb(30, 30, 30);
+    background-color: whitesmoke;
+    color: rgb(30, 30, 30);
 }
 
 /* scrollbar */
 html::-webkit-scrollbar {
-  width: 16px;
+    width: 16px;
+    background-color: #6e1953;
 }
+
 html::-webkit-scrollbar-thumb {
-  background-color: #FCECD8;
-  border-radius: 8px;
-  height: 56px;
-  border: 4px solid #7e1b5e;
+    background-color: #FCECD8;
+    border-radius: 8px;
+    border: 4px solid #6e1953;
 }
+
 html::-webkit-scrollbar-thumb:hover {
-  background-color: #e7d8c5;
+    background-color: #e7d8c5;
 }
 
 /* responsivness */
 @media all and (max-width: 800px) {
-  header h1{
-    font-size: 30px;
-  }
+    header h1 {
+        font-size: 30px;
+    }
 }
+
 @media(max-width: 600px) {
-  header h1 {
-    font-size: 25px;
-  }
+    header h1 {
+        font-size: 25px;
+    }
 }
+
 @media(max-width: 500px) {
-  #nav_menu {
-    width: 100%;
-  }
-  header h1 {
-    font-size: 20px;
-  }
+    #nav_menu {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
 }
+
 @media(max-width: 400px) {
-  header h1 {
-    font-size: 15px;
-  }
+    header h1 {
+        font-size: 15px;
+    }
 }

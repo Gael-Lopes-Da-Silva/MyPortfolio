@@ -2,9 +2,8 @@
 
 ---
 
-<p align="center">💼 This is my portfolio. I'm not a profesional so it can contain code that can hurt your eyes.</p>
+<p align="center">💼 This is my portfolio. I'm not a profesional so it can contain code that can be used the wrong way.</p>
 
 ---
 
-### 🔥 TODO
-- [ ] Make my CV for the portfolio.
+### 
