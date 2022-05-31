@@ -5,5 +5,3 @@
 <p align="center">💼 This is my portfolio. I'm not a profesional so it can contain code that can be used the wrong way.</p>
 
 ---
-
-### 

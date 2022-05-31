@@ -1,4 +1,3 @@
-/* CSS file for all the html files of my portfolio */
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
 
 /* body */
@@ -9,7 +8,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: 'Cascadia Code', sans-serif;
+    font-family: 'Cascadia Mono', sans-serif;
 }
 
 html,
@@ -25,8 +24,8 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background-color: #6e1953;
-    border-bottom: 5px solid #680E4B;
+    background-color: #6F1451;
+    border-bottom: 5px solid #690E4B;
 
     display: flex;
     justify-content: center;
@@ -51,13 +50,12 @@ main {
 }
 
 /* nav menu */
-#nav_menu {
+.menu {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 280px;
-    background-color: #6e1953;
-    border-right: 5px solid #680E4B;
+    background-color: #6F1451;
     -webkit-transition: 850s;
     transition: 850ms;
 
@@ -66,7 +64,7 @@ main {
     left: -100%;
 }
 
-#navbar_toggle {
+.menu_navbar {
     width: 100%;
     height: 80px;
     display: flex;
@@ -75,14 +73,14 @@ main {
     z-index: 0;
 }
 
-#navbar_toggle label {
+.menu_navbar label {
     cursor: pointer;
     position: absolute;
     left: 15px;
-    top: 19px;
+    top: 19.5px;
 }
 
-.nav_section {
+.buttons_section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -104,44 +102,44 @@ main {
 }
 
 .unselected:hover {
-    background-color: #680E4B;
+    background-color: #690E4B;
     cursor: pointer;
 }
 
 .unselected:active {
-    border-top: 4px solid #490b35;
+    border-top: 4px solid #56003A;
     padding-bottom: 3px;
 }
 
-#selected {
+.selected {
     color: whitesmoke;
     padding: 7px 30px;
     text-align: center;
     margin: 2px 0;
     border-radius: 5px;
     font-size: 23px;
-    background-color: #550c3e;
-    border-bottom: 5px solid #490b35;
+    background-color: #5F0341;
+    border-bottom: 5px solid #56003A;
 }
 
-#selected:active {
-    border-bottom: 2px solid #490b35;
+.selected:active {
+    border-bottom: 2px solid #56003A;
     margin-top: 5px;
 }
 
-#nav_menu.active {
+.menu.active {
     left: 0;
     -webkit-transition: 350s;
     transition: 350ms;
 }
 
 /* navbar button */
-#navbar {
+.header_navbar {
     position: absolute;
     left: 15px;
 }
 
-#navbar label {
+.header_navbar label {
     cursor: pointer;
 }
 
@@ -161,11 +159,15 @@ main {
 }
 
 .bar:active .single_bar {
-    border-top: 3px solid #490b35;
+    border-top: 3px solid #56003A;
 }
 
 /* at selection */
-::selection,
+::selection {
+    background-color: whitesmoke;
+    color: rgb(30, 30, 30);
+}
+
 ::-moz-selection {
     background-color: whitesmoke;
     color: rgb(30, 30, 30);
@@ -174,13 +176,13 @@ main {
 /* scrollbar */
 html::-webkit-scrollbar {
     width: 16px;
-    background-color: #6e1953;
+    background-color: #6F1451;
 }
 
 html::-webkit-scrollbar-thumb {
     background-color: #FCECD8;
     border-radius: 8px;
-    border: 4px solid #6e1953;
+    border: 4px solid #6F1451;
 }
 
 html::-webkit-scrollbar-thumb:hover {
@@ -201,7 +203,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 @media(max-width: 500px) {
-    #nav_menu {
+    .menu {
         width: 100%;
     }
 
