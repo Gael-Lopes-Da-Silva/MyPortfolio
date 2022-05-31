@@ -26,6 +26,7 @@ header {
     height: 80px;
     background-color: #6F1451;
     border-bottom: 5px solid #690E4B;
+    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
 
     display: flex;
     justify-content: center;
@@ -56,6 +57,7 @@ main {
     height: 100%;
     width: 280px;
     background-color: #6F1451;
+    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
     -webkit-transition: 850s;
     transition: 850ms;
 
@@ -64,7 +66,7 @@ main {
     left: -100%;
 }
 
-.menu_navbar {
+.menu_header {
     width: 100%;
     height: 80px;
     display: flex;
@@ -73,14 +75,14 @@ main {
     z-index: 0;
 }
 
-.menu_navbar label {
+.menu_header label {
     cursor: pointer;
     position: absolute;
     left: 15px;
     top: 19.5px;
 }
 
-.buttons_section {
+.menu_buttons {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -90,6 +92,20 @@ main {
     -webkit-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
+}
+
+.menu_footer {
+    margin: 15px;
+    margin-top: auto;
+    text-align: center;
+}
+
+.menu_footer a {
+    color: whitesmoke;
+}
+
+.menu_footer a:hover {
+    text-decoration: underline;
 }
 
 .unselected {
@@ -104,11 +120,13 @@ main {
 .unselected:hover {
     background-color: #690E4B;
     cursor: pointer;
+    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
 }
 
 .unselected:active {
-    border-top: 4px solid #56003A;
-    padding-bottom: 3px;
+    box-shadow: 0px 0px 0px rgb(28 26 23 / 40%);
+    margin-top: 5px;
+    margin-bottom: -1px;
 }
 
 .selected {
@@ -120,6 +138,7 @@ main {
     font-size: 23px;
     background-color: #5F0341;
     border-bottom: 5px solid #56003A;
+    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
 }
 
 .selected:active {
@@ -177,6 +196,7 @@ main {
 html::-webkit-scrollbar {
     width: 16px;
     background-color: #6F1451;
+    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
 }
 
 html::-webkit-scrollbar-thumb {
@@ -205,6 +225,10 @@ html::-webkit-scrollbar-thumb:hover {
 @media(max-width: 500px) {
     .menu {
         width: 100%;
+    }
+
+    html::-webkit-scrollbar {
+        display: none;
     }
 
     header h1 {
