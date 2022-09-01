@@ -60,6 +60,175 @@
     margin-top: 4px;
 }
 
+#easter {
+    display: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#easter.active {
+    display: block;
+}
+
+#easter_1 {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    bottom: -50px;
+    left: -50px;
+    rotate: 25deg;
+    -webkit-user-drag: none;
+}
+
+#easter_2 {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    bottom: -40px;
+    right: -40px;
+    rotate: -25deg;
+    -webkit-user-drag: none;
+}
+
+#easter_3 {
+    position: fixed;
+    width: 130px;
+    height: 130px;
+    bottom: -40px;
+    right: 90px;
+    rotate: -10deg;
+    -webkit-user-drag: none;
+}
+
+#easter_4 {
+    position: fixed;
+    width: 170px;
+    height: 170px;
+    bottom: -50px;
+    left: 130px;
+    rotate: 5deg;
+    -webkit-user-drag: none;
+}
+
+#halloween {
+    display: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#halloween.active {
+    display: block;
+}
+
+#halloween_1 {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    right: -30px;
+    rotate: -140deg;
+    -webkit-user-drag: none;
+}
+
+#halloween_2 {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    top: 72px;
+    left: -10px;
+    -webkit-user-drag: none;
+}
+
+#halloween_3 {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    -webkit-user-drag: none;
+}
+
+#halloween_4 {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    bottom: -30px;
+    left: -50px;
+    rotate: 25deg;
+    -webkit-user-drag: none;
+}
+
+#christmas {
+    display: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#christmas.active {
+    display: block;
+}
+
+#christmas_1 {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    bottom: -10px;
+    left: -60px;
+    rotate: -5deg;
+    -webkit-user-drag: none;
+}
+
+#christmas_2 {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    top: 60px;
+    left: -20px;
+    rotate: -20deg;
+    -webkit-user-drag: none;
+}
+
+#christmas_3 {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    bottom: -10px;
+    right: 80px;
+    rotate: -5deg;
+    -webkit-user-drag: none;
+}
+
+#christmas_4 {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    bottom: 0;
+    left: 200px;
+    -webkit-user-drag: none;
+}
+
+#christmas_5 {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    left: 280px;
+    -webkit-user-drag: none;
+}
+
+#christmas_6 {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    bottom: -20px;
+    right: -40px;
+    rotate: -10deg;
+    -webkit-user-drag: none;
+}
+
 /* vertical responsivness */
 @media all and (max-height: 700px) {
     #profil_container {
@@ -76,6 +245,97 @@
     #main_image img {
         width: 250px;
     }
+
+    #easter_1 {
+        width: 260px;
+        height: 260px;
+        bottom: -60px;
+        left: -60px;
+    }
+
+    #easter_2 {
+        width: 180px;
+        height: 180px;
+        bottom: -50px;
+        right: -50px;
+    }
+
+    #easter_3 {
+        width: 110px;
+        height: 110px;
+        bottom: -40px;
+        right: 70px;
+    }
+
+    #easter_4 {
+        width: 150px;
+        height: 150px;
+        bottom: -50px;
+        left: 100px;
+    }
+
+    #halloween_1 {
+        width: 180px;
+        height: 180px;
+        top: 50px;
+        right: -30px;
+    }
+
+    #halloween_2 {
+        width: 180px;
+        height: 180px;
+        top: 72px;
+        left: -10px;
+    }
+
+    #halloween_3 {
+        width: 100px;
+        height: 100px;
+        bottom: 0;
+        right: 0;
+    }
+    
+    #halloween_4 {
+        width: 200px;
+        height: 200px;
+        bottom: -30px;
+        left: -30px;
+    }
+    
+    #christmas_1 {
+        width: 300px;
+        height: 300px;
+        bottom: -10px;
+        left: -60px;
+    }
+
+    #christmas_2 {
+        width: 150px;
+        height: 150px;
+        top: 60px;
+        left: -20px;
+    }
+
+    #christmas_3 {
+        width: 100px;
+        height: 100px;
+        bottom: -10px;
+        right: 80px;
+    }
+
+    #christmas_4 {
+        width: 80px;
+        height: 80px;
+        bottom: 0;
+        left: 160px;
+    }
+
+    #christmas_5 {
+        width: 60px;
+        height: 60px;
+        bottom: 0;
+        left: 210px;
+    }
 }
 
 @media(max-width: 600px) {
@@ -85,6 +345,76 @@
 
     #main_infos p {
         font-size: 20px;
+    }
+
+    #easter_1 {
+        width: 220px;
+        height: 220px;
+        bottom: -60px;
+        left: -60px;
+    }
+
+    #easter_2 {
+        width: 180px;
+        height: 180px;
+        bottom: -50px;
+        right: -50px;
+    }
+
+    #easter_3 {
+        width: 110px;
+        height: 110px;
+        bottom: -40px;
+        right: 70px;
+    }
+
+    #easter_4 {
+        width: 130px;
+        height: 130px;
+        bottom: -50px;
+        left: 70px;
+    }
+
+    #halloween_1 {
+        width: 130px;
+        height: 130px;
+        top: 60px;
+        right: -20px;
+    }
+
+    #halloween_2 {
+        width: 130px;
+        height: 130px;
+        top: 75px;
+        left: -6px;
+    }
+
+    #christmas_1 {
+        width: 200px;
+        height: 200px;
+        bottom: -10px;
+        left: -40px;
+    }
+
+    #christmas_2 {
+        width: 120px;
+        height: 120px;
+        top: 70px;
+        left: -10px;
+    }
+
+    #christmas_4 {
+        width: 50px;
+        height: 50px;
+        bottom: 0;
+        left: 100px;
+    }
+
+    #christmas_5 {
+        width: 30px;
+        height: 30px;
+        bottom: 0;
+        left: 130px;
     }
 }
 
@@ -118,5 +448,20 @@
 
     #main_infos p {
         font-size: 10px;
+    }
+}
+
+/* horizontal and vertical responsivness */
+@media (max-height: 700px) and (max-width: 500px) {
+    #easter {
+        display: none;
+    }
+
+    #halloween {
+        display: none;
+    }
+
+    #christmas {
+        display: none;
     }
 }
