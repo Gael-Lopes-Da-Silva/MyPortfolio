@@ -5,7 +5,6 @@
     <title>Gaël Lopes Da Silva</title>
 
     <meta charset="UTF-8">
-    <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Gaël Lopes Da Silva">
     <meta name="description" content="👋 Here is my portfolio.">
@@ -24,36 +23,32 @@
 </head>
 
 <body>
-    <!-- header of the website -->
     <header>
-        <div class="header_navbar">
-            <label class="show_menu" tabindex="1">
-                <div class="bar">
-                    <span class="single_bar"></span>
-                    <span class="single_bar"></span>
-                    <span class="single_bar"></span>
-                </div>
-            </label>
+        <div class="navbar show_menu" tabindex="1">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-        <a href="./index.html" tabindex="0">
-            <h1>My Profile</h1>
-        </a>
+        <h1>My Profile</h1>
     </header>
 
-    <!-- main part of the website -->
     <main>
-        <!-- Portfolio profil -->
-        <div id="profil_container">
+        <!-- Portfolio profile -->
+        <div id="profile_container">
             <div id="main_image">
-                <img src="img/profil.png" alt="Profil image">
+                <img src="img/profile.png" alt="profile image">
             </div>
             <div id="main_infos">
                 <h3>Gaël Lopes Da Silva</h3>
                 <p id="age"></p>
             </div>
             <div id="main_socials">
+                <!-- icons: https://icon-icons.com/icon/linkedin/59208 -->
                 <a href="https://github.com/Gael-Lopes-Da-Silva" target="_blank">
-                    <img src="./img/git.png" alt="github">
+                    <img src="./img/logos/github.png" alt="github">
+                </a>
+                <a href="https://www.linkedin.com/in/gael-lopes-da-silva/" target="_blank">
+                    <img src="./img/logos/linkedin.png" alt="linkedin">
                 </a>
             </div>
         </div>
@@ -84,13 +79,11 @@
     <!-- navigation menu of the website -->
     <nav class="menu">
         <div class="menu_header">
-            <label class="hide_menu">
-                <div class="bar">
-                    <span class="single_bar"></span>
-                    <span class="single_bar"></span>
-                    <span class="single_bar"></span>
-                </div>
-            </label>
+            <div class="navbar hide_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
         <div class="menu_buttons">
             <a href="#" class="selected" tabindex="-1">Profile</a>
@@ -98,7 +91,7 @@
             <a href="skills.html" class="unselected" tabindex="-1">Skills</a>
         </div>
         <div class="menu_footer">
-            <a href="https://github.com/Gael-Lopes-Da-Silva/MyPortfolio/blob/main/LICENSE" target="_blank">© 2022 Gaël Lopes Da Silva</a>
+            <a href="https://github.com/Gael-Lopes-Da-Silva/MyPortfolio/blob/main/LICENSE" target="_blank">&copy; 2022 Gaël Lopes Da Silva</a>
         </div>
     </nav>
 
