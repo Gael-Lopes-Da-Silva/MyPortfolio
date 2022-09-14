@@ -24,15 +24,15 @@ const christmasEvent = document.querySelector("#christmas");
 const christmas = new Date(0, 12, 25);
 
 function toggleHollidaysEvents() {
-    if (today.getDate() == easter.getDate() && today.getMonth()+1 == easter.getMonth()) {
+    if ((today.getDate() > easter.getDate()-5 && today.getDate() < easter.getDate()+5) && today.getMonth()+1 == easter.getMonth()) {
         easterEvent.classList.add("active");
     }
     
-    if (today.getDate() == halloween.getDate() && today.getMonth()+1 == halloween.getMonth()) {
+    if ((today.getDate() > halloween.getDate()-5 && today.getDate() < halloween.getDate()+5) && today.getMonth()+1 == halloween.getMonth()) {
         halloweenEvent.classList.add("active");
     }
 
-    if (today.getDate() == christmas.getDate() && today.getMonth()+1 == christmas.getMonth()) {
+    if ((today.getDate() > christmas.getDate()-5 && today.getDate() < christmas.getDate()+5) && today.getMonth()+1 == christmas.getMonth()) {
         christmasEvent.classList.add("active");
     }
 }
