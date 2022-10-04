@@ -94,7 +94,7 @@ body {
         height: 240px;
     }
 
-    .repos_lines {
+    .repos_row {
         flex-direction: column;
     }
 }
