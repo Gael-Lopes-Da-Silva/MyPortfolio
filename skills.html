@@ -24,7 +24,8 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-        <h1>My Skills</h1>
+        <h1 ltag="skills_title">My Skills</h1>
+        <p ltag="language" class="language show_language_menu" tabindex="1">English</p>
     </header>
 
     <!-- main part of the website -->
@@ -32,7 +33,7 @@
         <div id="skills_container">
             <div class="skills_section">
                 <div class="skill_item">
-                    <h2>Known Languages</h2>
+                    <h2 ltag="skills_languages">Known Languages</h2>
                     <ul>
                         <li>C#</li>
                         <li>C</li>
@@ -44,74 +45,74 @@
                     </ul>
                 </div>
                 <div class="skill_item">
-                    <h2>Experiences</h2>
+                    <h2 ltag="skills_experiences">Experiences</h2>
                     <ul>
-                        <li>About 4 years of hobbyist programming</li>
-                        <li>I learned Python and C# from OpenClassrooms</li>
+                        <li ltag="skills_experiences_1">About 4 years of hobbyist programming</li>
+                        <li ltag="skills_experiences_2">I learned Python and C# from OpenClassrooms</li>
                     </ul>
                 </div>
                 <div class="skill_item">
-                    <h2>Achievements</h2>
+                    <h2 ltag="skills_achievements">Achievements</h2>
                     <ul>
-                        <li>Live and exist</li>
+                        <li ltag="skills_achievements_1">Live and exist</li>
                     </ul>
                 </div>
             </div>
             <div class="skills_section">
                 <div class="skill_item">
-                    <h2>Technologies & Software Used</h2>
+                    <h2 ltag="skills_technologies">Technologies & Software Used</h2>
                     <ul>
                         <li>
-                            <b>Operating system:</b><br>
+                            <b ltag="skills_technologies_1">Operating system</b><br>
                             Windows, Linux (fedora, debian, ubuntu, manjaro...), TempleOS
                         </li>
                         <li>
-                            <b>Version control:</b><br>
+                            <b ltag="skills_technologies_2">Version control</b><br>
                             Github
                         </li>
                         <li>
-                            <b>Game developpement:</b><br>
+                            <b ltag="skills_technologies_3">Game developpement</b><br>
                             Unity, Unreal Engine, Godot, Stride, Raylib, Monogame
                         </li>
                         <li>
-                            <b>IA & Data science:</b><br>
+                            <b ltag="skills_technologies_4">IA & Data science</b><br>
                             Matplotlib, NumPy, Arraymancer
                         </li>
                         <li>
-                            <b>API:</b><br>
+                            <b ltag="skills_technologies_5">API</b><br>
                             Discord.net
                         </li>
                         <li>
-                            <b>Code editing & IDE</b><br>
+                            <b ltag="skills_technologies_6">Code editing & IDE</b><br>
                             Visual Studio Code, Visual Studio, Atom, Sublim Text, Emacs
                         </li>
                         <li>
-                            <b>OS emulator</b><br>
+                            <b ltag="skills_technologies_7">OS emulator</b><br>
                             VirtualBox, VMware, Qemu 
                         </li>
                         <li>
-                            <b>Drawing & Pixel art</b><br>
+                            <b ltag="skills_technologies_8">Drawing & Pixel art</b><br>
                             Paint.net, Aseprite
                         </li>
                     </ul>
                 </div>
                 <div class="skill_item">
-                    <h2>Education</h2>
+                    <h2 ltag="skills_education">Education</h2>
                     <ul>
                         <li>
-                            <b>High school baccalaureate</b><br>
-                            2018 - 2020, France
+                            <b ltag="skills_education_1">High school baccalaureate</b><br>
+                            <p ltag="skills_education_location_1">2018 - 2020, France</p>
                         </li>
                         <li>
-                            <b>Self taugh programming</b><br>
-                            2018 - 2022, My home
+                            <b ltag="skills_education_2">Self taugh programming</b><br>
+                            <p ltag="skills_education_location_2">2018 - 2022, My home</p>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div id="contact">
-            <p><b>Email:</b> <a href="mailto:gael.lopes-da-silva@outlook.fr">gael.lopes-da-silva@outlook.fr</a></p>
+            <p><b ltag="skills_contact">Email</b>: <a href="mailto:gael.lopes-da-silva@outlook.fr">gael.lopes-da-silva@outlook.fr</a></p>
         </div>
     </main>
 
@@ -125,16 +126,43 @@
             </div>
         </div>
         <div class="menu_buttons">
-            <a href="index.html" class="unselected" tabindex="-1">Profil</a>
-            <a href="projects.html" class="unselected" tabindex="-1">Projects</a>
-            <a href="#" class="selected" tabindex="-1">Skills</a>
+            <a href="index.html" ltag="menu_profile" class="unselected" tabindex="-1">Profile</a>
+            <a href="projects.html" ltag="menu_projects" class="unselected" tabindex="-1">Projects</a>
+            <a href="#" ltag="menu_skills" class="selected" tabindex="-1">Skills</a>
         </div>
         <div class="menu_footer">
             <a href="https://github.com/Gael-Lopes-Da-Silva/MyPortfolio/blob/main/LICENSE" target="_blank">© 2022 Gaël Lopes Da Silva</a>
         </div>
     </nav>
 
-    <script src="js/main.js"></script>
+    <!-- language menu -->
+    <nav class="language_menu">
+        <div class="language_menu_header">
+            <div class="navbar hide_language_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div class="language_menu_main">
+            <div class="language_menu_main_row">
+                <img class="language_english" src="./img/flags/en.png" alt="english" title="English">
+                <img class="language_french" src="./img/flags/fr.png" alt="french" title="Français">
+                <img class="language_japanese" src="./img/flags/jp.png" alt="japanese" title="日本">
+            </div>
+            <div class="language_menu_main_row">
+                <img class="language_swedish" src="./img/flags/se.png" alt="swedish" title="Svenska">
+                <img class="language_chinese" src="./img/flags/cn.png" alt="chinese" title="中国人">
+                <img class="language_german" src="./img/flags/de.png" alt="german" title="Deutsch">
+            </div>
+            <div class="language_menu_main_row">
+                <img class="language_spanish" src="./img/flags/ea.png" alt="spanish" title="Español">
+            </div>
+        </div>
+    </nav>
+
+    <script src="js/menu.js"></script>
+    <script src="js/translate.js"></script>
 </body>
 
 </html>

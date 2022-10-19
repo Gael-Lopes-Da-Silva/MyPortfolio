@@ -1,0 +1,39 @@
+{
+    "language": "日本",
+
+    "index_title": "私のプロフィール",
+    "index_age": "歳",
+
+    "menu_profile": "プロフィール",
+    "menu_projects": "プロジェクト",
+    "menu_skills": "スキル",
+
+    "projects_title": "マイ プロジェクト",
+
+    "skills_title": "自分のスキル",
+    "skills_languages": "既知の言語",
+    "skills_experiences": "経験",
+    "skills_experiences_1": "約4年間の趣味のプログラミング",
+    "skills_experiences_2": "OpenClassrooms で Python と C# を学びました",
+    "skills_achievements": "実績",
+    "skills_achievements_1": "生きて存在する",
+    "skills_technologies": "使用するテクノロジーとソフトウェア",
+    "skills_technologies_1": "オペレーティング·システム",
+    "skills_technologies_2": "バージョンチェッカー",
+    "skills_technologies_3": "ゲーム開発",
+    "skills_technologies_4": "AI とデータ サイエンス",
+    "skills_technologies_5": "API",
+    "skills_technologies_6": "コード エディターと IDE",
+    "skills_technologies_7": "オペレーティング システム エミュレータ",
+    "skills_technologies_8": "描画とピクセル アート",
+    "skills_education": "教育",
+    "skills_education_1": "高校の学士号",
+    "skills_education_location_1": "2018 - 2020, フランス",
+    "skills_education_2": "独学でプログラミング",
+    "skills_education_location_2": "2018 - 2022, 私の家",
+    "skills_contact": "Eメール",
+
+    "404_title": "ページが見つかりません",
+    "404_error": "エラー404",
+    "404_text": "あなたのウェブページは見つかりませんでした"
+}

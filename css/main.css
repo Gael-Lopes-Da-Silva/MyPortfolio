@@ -5,8 +5,8 @@
 *:after,
 *:before {
     margin: 0;
-    box-sizing: border-box;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     font-family: 'Cascadia Mono', sans-serif;
 }
@@ -60,12 +60,19 @@ header h1 {
     margin: 2.5px;
     height: 7px;
     width: 45px;
-    background-color: whitesmoke;
     border-radius: 50px;
+    background-color: whitesmoke;
 }
 
 .navbar:active .bar {
     border-top: 3px solid #56003A;
+}
+
+.language {
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 /* main */
@@ -176,6 +183,58 @@ main {
     transition: 350ms;
 }
 
+/* nav language */
+.language_menu {
+    position: fixed;
+    height: 100%;
+    width: 280px;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #6F1451;
+    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
+    -webkit-transition: 850s;
+    transition: 850ms;
+    z-index: 2;
+}
+
+.language_menu_header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.language_menu_header .navbar {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    left: auto;
+    top: 19.5px;
+}
+
+.language_menu_main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.language_menu_main_row img {
+    height: 70px;
+    cursor: pointer;
+    filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
+}
+
+.language_menu.active {
+    right: 0;
+    -webkit-transition: 350s;
+    transition: 350ms;
+}
+
 /* at selection */
 ::selection {
     background-color: whitesmoke;
@@ -219,6 +278,9 @@ html::-webkit-scrollbar-thumb:hover {
 
 @media(max-width: 500px) {
     .menu {
+        width: 100%;
+    }
+    .language_menu {
         width: 100%;
     }
 

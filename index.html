@@ -28,7 +28,8 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-        <h1>My Profile</h1>
+        <h1 ltag="index_title">My Profile</h1>
+        <p ltag="language" class="language show_language_menu" tabindex="1">English</p>
     </header>
 
     <main>
@@ -39,12 +40,18 @@
             </div>
             <div id="main_infos">
                 <h3>Gaël Lopes Da Silva</h3>
-                <p id="age"></p>
+                <div>
+                    <p id="age"></p>
+                    <p ltag="index_age">years old</p>
+                </div>
             </div>
             <div id="main_socials">
-                <!-- icons: https://icon-icons.com/icon/linkedin/59208 -->
+                <!-- icons: https://www.dropbox.com/sh/892certq9eltpab/AAAUy_GyM1tfniFEKjbcmumAa?dl=0 -->
                 <a href="https://github.com/Gael-Lopes-Da-Silva" target="_blank">
                     <img src="./img/logos/github.png" alt="github" title="Github">
+                </a>
+                <a href="https://gitlab.com/Gael-Lopes-Da-Silva" target="_blank">
+                    <img src="./img/logos/gitlab.png" alt="gitlab" title="Gitlab">
                 </a>
                 <a href="https://www.linkedin.com/in/gael-lopes-da-silva/" target="_blank">
                     <img src="./img/logos/linkedin.png" alt="linkedin" title="Linkedin">
@@ -85,17 +92,45 @@
             </div>
         </div>
         <div class="menu_buttons">
-            <a href="#" class="selected" tabindex="-1">Profile</a>
-            <a href="projects.html" class="unselected" tabindex="-1">Projects</a>
-            <a href="skills.html" class="unselected" tabindex="-1">Skills</a>
+            <a href="#" ltag="menu_profile" class="selected" tabindex="-1">Profile</a>
+            <a href="projects.html" ltag="menu_projects" class="unselected" tabindex="-1">Projects</a>
+            <a href="skills.html" ltag="menu_skills" class="unselected" tabindex="-1">Skills</a>
         </div>
         <div class="menu_footer">
             <a href="https://github.com/Gael-Lopes-Da-Silva/MyPortfolio/blob/main/LICENSE" target="_blank">&copy; 2022 Gaël Lopes Da Silva</a>
         </div>
     </nav>
 
-    <script src="js/main.js"></script>
+    <!-- language menu -->
+    <nav class="language_menu">
+        <div class="language_menu_header">
+            <div class="navbar hide_language_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <!-- flags: https://icons8.com/icon/set/flags/stickers -->
+        <div class="language_menu_main">
+            <div class="language_menu_main_row">
+                <img class="language_english" src="./img/flags/en.png" alt="english" title="English">
+                <img class="language_french" src="./img/flags/fr.png" alt="french" title="Français">
+                <img class="language_japanese" src="./img/flags/jp.png" alt="japanese" title="日本">
+            </div>
+            <div class="language_menu_main_row">
+                <img class="language_swedish" src="./img/flags/se.png" alt="swedish" title="Svenska">
+                <img class="language_chinese" src="./img/flags/cn.png" alt="chinese" title="中国人">
+                <img class="language_german" src="./img/flags/de.png" alt="german" title="Deutsch">
+            </div>
+            <div class="language_menu_main_row">
+                <img class="language_spanish" src="./img/flags/ea.png" alt="spanish" title="Español">
+            </div>
+        </div>
+    </nav>
+
+    <script src="js/menu.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/translate.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,39 @@
+{
+    "language": "Français",
+
+    "index_title": "Mon Profil",
+    "index_age": "ans",
+
+    "menu_profile": "Profil",
+    "menu_projects": "Projets",
+    "menu_skills": "Compétences",
+    
+    "projects_title": "Mes Projets",
+
+    "skills_title": "Mes Compétences",
+    "skills_languages": "Langues Connues",
+    "skills_experiences": "Expériences",
+    "skills_experiences_1": "Environ 4 ans de programmation amateur",
+    "skills_experiences_2": "J'ai appris le Python et le C# avec OpenClassrooms",
+    "skills_achievements": "Réalisations",
+    "skills_achievements_1": "Vivre et exister",
+    "skills_technologies": "Technologies et Logiciels Utilisés",
+    "skills_technologies_1": "Système d'Exploitation",
+    "skills_technologies_2": "Contrôleur de version",
+    "skills_technologies_3": "Développement de Jeux",
+    "skills_technologies_4": "IA et Science des Données",
+    "skills_technologies_5": "API",
+    "skills_technologies_6": "Éditeur de Code et IDE",
+    "skills_technologies_7": "Émulateur de Système d'Exploitation",
+    "skills_technologies_8": "Dessin et Pixel art",
+    "skills_education": "Éducation",
+    "skills_education_1": "Baccalauréat",
+    "skills_education_location_1": "2018 - 2020, France",
+    "skills_education_2": "Programmation autodidacte",
+    "skills_education_location_2": "2018 - 2022, Ma maison",
+    "skills_contact": "Mail",
+
+    "404_title": "Page non trouvée",
+    "404_error": "ERREUR 404",
+    "404_text": "votre page web n'a pas été trouvée"
+}

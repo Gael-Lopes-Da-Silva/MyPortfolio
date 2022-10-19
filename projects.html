@@ -24,7 +24,8 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-        <h1>My Projects</h1>
+        <h1 ltag="projects_title">My Projects</h1>
+        <p ltag="language" class="language show_language_menu" tabindex="1">English</p>
     </header>
 
     <!-- main part of the website -->
@@ -62,6 +63,10 @@
                         <img src="./img/projects/row_2/pong.png" alt="Pong">
                         <h3>Pong</h3>
                     </a>
+                    <a href="https://github.com/Gael-Lopes-Da-Silva/AdventOfCode" target="_blank">
+                        <img src="./img/projects/row_2/adventofcode.png" alt="AdventOfCode">
+                        <h3>AdventOfCode</h3>
+                    </a>
                 </div>
             </div>
         </div>
@@ -77,16 +82,43 @@
             </div>
         </div>
         <div class="menu_buttons">
-            <a href="index.html" class="unselected" tabindex="-1">Profile</a>
-            <a href="#" class="selected" tabindex="-1">Projects</a>
-            <a href="skills.html" class="unselected" tabindex="-1">Skills</a>
+            <a href="index.html" ltag="menu_profile" class="unselected" tabindex="-1">Profile</a>
+            <a href="#" ltag="menu_projects" class="selected" tabindex="-1">Projects</a>
+            <a href="skills.html" ltag="menu_skills" class="unselected" tabindex="-1">Skills</a>
         </div>
         <div class="menu_footer">
             <a href="https://github.com/Gael-Lopes-Da-Silva/MyPortfolio/blob/main/LICENSE" target="_blank">© 2022 Gaël Lopes Da Silva</a>
         </div>
     </nav>
 
-    <script src="js/main.js"></script>
+    <!-- language menu -->
+    <nav class="language_menu">
+        <div class="language_menu_header">
+            <div class="navbar hide_language_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div class="language_menu_main">
+            <div class="language_menu_main_row">
+                <img class="language_english" src="./img/flags/en.png" alt="english" title="English">
+                <img class="language_french" src="./img/flags/fr.png" alt="french" title="Français">
+                <img class="language_japanese" src="./img/flags/jp.png" alt="japanese" title="日本">
+            </div>
+            <div class="language_menu_main_row">
+                <img class="language_swedish" src="./img/flags/se.png" alt="swedish" title="Svenska">
+                <img class="language_chinese" src="./img/flags/cn.png" alt="chinese" title="中国人">
+                <img class="language_german" src="./img/flags/de.png" alt="german" title="Deutsch">
+            </div>
+            <div class="language_menu_main_row">
+                <img class="language_spanish" src="./img/flags/ea.png" alt="spanish" title="Español">
+            </div>
+        </div>
+    </nav>
+
+    <script src="js/menu.js"></script>
+    <script src="js/translate.js"></script>
 </body>
 
 </html>

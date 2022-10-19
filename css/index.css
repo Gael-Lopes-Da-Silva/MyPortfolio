@@ -30,7 +30,14 @@
     font-size: 30px;
 }
 
-#main_infos p {
+#main_infos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_infos div p {
+    padding: 5px;
     font-size: 25px;
 }
 
@@ -72,6 +79,7 @@
 
 #easter img {
     position: fixed;
+    filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
 }
 
 #easter.active {
@@ -123,6 +131,7 @@
 
 #halloween img {
     position: fixed;
+    filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
 }
 
 #halloween.active {
@@ -172,6 +181,7 @@
 
 #christmas img {
     position: fixed;
+    filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
 }
 
 #christmas.active {
