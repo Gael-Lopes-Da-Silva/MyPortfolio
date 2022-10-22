@@ -241,7 +241,7 @@
 }
 
 /* vertical responsivness */
-@media all and (max-height: 700px) {
+@media all and (max-height: 800px) {
     #profile_container {
         justify-content: start;
     }
