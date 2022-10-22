@@ -176,6 +176,8 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
 
+        document.cookie = "language=fr; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
@@ -187,6 +189,8 @@ function toggleLanguageMenu() {
         buttonOpenLanguageMenu.setAttribute("tabindex", "1");
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
+
+        document.cookie = "language=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
@@ -200,6 +204,9 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
 
+        document.cookie = "language=jp; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+        console.log(document.cookie);
+
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
@@ -211,6 +218,8 @@ function toggleLanguageMenu() {
         buttonOpenLanguageMenu.setAttribute("tabindex", "1");
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
+
+        document.cookie = "language=se; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
@@ -224,6 +233,8 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
 
+        document.cookie = "language=cn; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
@@ -236,6 +247,8 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
 
+        document.cookie = "language=de; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
@@ -247,6 +260,8 @@ function toggleLanguageMenu() {
         buttonOpenLanguageMenu.setAttribute("tabindex", "1");
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
+
+        document.cookie = "language=ea; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");

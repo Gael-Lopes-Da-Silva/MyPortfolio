@@ -1,15 +1,15 @@
 function translate() {
-    this.init = function(language, attribute) {
+    this.init = function (language, attribute) {
         this.attribute = attribute;
         this.language = language;
     }
 
-    this.process = function() {
+    this.process = function () {
         _self = this;
         let file = new XMLHttpRequest();
 
         file.open("GET", `./config/lang/${this.language}.json`, false);
-        file.onreadystatechange = function() {
+        file.onreadystatechange = function () {
             if (file.readyState == 4 && (file.status === 200 || file.status === 0)) {
                 let languageContent = JSON.parse(file.responseText);
                 let elements = document.getElementsByTagName("*");
@@ -35,4 +35,22 @@ function toggleTranslation(language, attribute) {
     translation.process();
 }
 
-toggleTranslation('fr', 'ltag')
+function checkLanguage() {
+    let cookies = document.cookie;
+
+    if (cookies.includes("language")) {
+        let cookiesList = {};
+
+        cookie.split(';').forEach(function(element) {
+            let [key,value] = element.split('=');
+            cookiesList[key.trim()] = value;
+        });
+
+        toggleTranslation(cookiesList["language"], "ltag");
+    } else {
+        document.cookie = "language=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+        toggleTranslation("en", "ltag");
+    }
+}
+
+checkLanguage();
