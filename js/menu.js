@@ -16,7 +16,7 @@ function toggleSideMenu() {
         buttonHideMenu.setAttribute("tabindex", "1");
         buttonOpenLanguageMenu.setAttribute("tabindex", "-1");
 
-        for (var i = 0; i < sideMenuButtons.length; i++) {
+        for (let i = 0; i < sideMenuButtons.length; i++) {
             sideMenuButtons[i].setAttribute("tabindex", "1");
         }
     });
@@ -27,7 +27,7 @@ function toggleSideMenu() {
         buttonHideMenu.setAttribute("tabindex", "-1");
         buttonOpenLanguageMenu.setAttribute("tabindex", "1");
 
-        for (var i = 0; i < sideMenuButtons.length; i++) {
+        for (let i = 0; i < sideMenuButtons.length; i++) {
             sideMenuButtons[i].setAttribute("tabindex", "-1");
         }
     });
@@ -40,7 +40,7 @@ function toggleSideMenu() {
             buttonHideMenu.setAttribute("tabindex", "1");
             buttonOpenLanguageMenu.setAttribute("tabindex", "-1");
 
-            for (var i = 0; i < sideMenuButtons.length; i++) {
+            for (let i = 0; i < sideMenuButtons.length; i++) {
                 sideMenuButtons[i].setAttribute("tabindex", "1");
             }
         }
@@ -50,7 +50,7 @@ function toggleSideMenu() {
             buttonHideMenu.setAttribute("tabindex", "-1");
             buttonOpenLanguageMenu.setAttribute("tabindex", "1");
 
-            for (var i = 0; i < sideMenuButtons.length; i++) {
+            for (let i = 0; i < sideMenuButtons.length; i++) {
                 sideMenuButtons[i].setAttribute("tabindex", "-1");
             }
         }
@@ -62,7 +62,7 @@ function toggleSideMenu() {
             buttonHideMenu.setAttribute("tabindex", "1");
             buttonOpenLanguageMenu.setAttribute("tabindex", "-1");
 
-            for (var i = 0; i < sideMenuButtons.length; i++) {
+            for (let i = 0; i < sideMenuButtons.length; i++) {
                 sideMenuButtons[i].setAttribute("tabindex", "1");
             }
             sideMenuButtons[0].focus();
@@ -74,7 +74,7 @@ function toggleSideMenu() {
             buttonHideMenu.setAttribute("tabindex", "-1");
             buttonOpenLanguageMenu.setAttribute("tabindex", "1");
 
-            for (var i = 0; i < sideMenuButtons.length; i++) {
+            for (let i = 0; i < sideMenuButtons.length; i++) {
                 sideMenuButtons[i].setAttribute("tabindex", "-1");
             }
         }
@@ -98,7 +98,7 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "1");
         buttonOpenMenu.setAttribute("tabindex", "-1");
 
-        for (var i = 0; i < languageButtons.length; i++) {
+        for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "1");
         }
     });
@@ -109,7 +109,7 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
 
-        for (var i = 0; i < languageButtons.length; i++) {
+        for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
     });
@@ -122,7 +122,7 @@ function toggleLanguageMenu() {
             buttonHideLanguageMenu.setAttribute("tabindex", "1");
             buttonOpenMenu.setAttribute("tabindex", "-1");
 
-            for (var i = 0; i < languageButtons.length; i++) {
+            for (let i = 0; i < languageButtons.length; i++) {
                 languageButtons[i].setAttribute("tabindex", "1");
             }
         }
@@ -132,7 +132,7 @@ function toggleLanguageMenu() {
             buttonHideLanguageMenu.setAttribute("tabindex", "-1");
             buttonOpenMenu.setAttribute("tabindex", "1");
 
-            for (var i = 0; i < languageButtons.length; i++) {
+            for (let i = 0; i < languageButtons.length; i++) {
                 languageButtons[i].setAttribute("tabindex", "-1");
             }
         }
@@ -144,13 +144,13 @@ function toggleLanguageMenu() {
             buttonHideLanguageMenu.setAttribute("tabindex", "1");
             buttonOpenMenu.setAttribute("tabindex", "-1");
 
-            for (var i = 0; i < languageButtons.length; i++) {
+            for (let i = 0; i < languageButtons.length; i++) {
                 languageButtons[i].setAttribute("tabindex", "1");
             }
             languageButtons[0].focus();
         }
         else {
-            for (var i = 0; i < languageButtons.length; i++) {
+            for (let i = 0; i < languageButtons.length; i++) {
                 if (document.activeElement == languageButtons[i] && event.key == "Enter") {
                     languageButtons[i].click();
                 }
@@ -163,7 +163,7 @@ function toggleLanguageMenu() {
             buttonHideLanguageMenu.setAttribute("tabindex", "-1");
             buttonOpenMenu.setAttribute("tabindex", "1");
 
-            for (var i = 0; i < languageButtons.length; i++) {
+            for (let i = 0; i < languageButtons.length; i++) {
                 languageButtons[i].setAttribute("tabindex", "-1");
             }
         }
@@ -176,7 +176,7 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
 
-        for (var i = 0; i < languageButtons.length; i++) {
+        for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
     });
@@ -188,7 +188,7 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
 
-        for (var i = 0; i < languageButtons.length; i++) {
+        for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
     });
@@ -200,7 +200,7 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
 
-        for (var i = 0; i < languageButtons.length; i++) {
+        for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
     });
@@ -212,7 +212,7 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
 
-        for (var i = 0; i < languageButtons.length; i++) {
+        for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
     });
@@ -224,7 +224,7 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
 
-        for (var i = 0; i < languageButtons.length; i++) {
+        for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
     });
@@ -236,7 +236,7 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
 
-        for (var i = 0; i < languageButtons.length; i++) {
+        for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
     });
@@ -248,7 +248,7 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
 
-        for (var i = 0; i < languageButtons.length; i++) {
+        for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
     });

@@ -6,17 +6,17 @@ function translate() {
 
     this.process = function() {
         _self = this;
-        var file = new XMLHttpRequest();
+        let file = new XMLHttpRequest();
 
-        file.open("GET", `../config/lang/${this.language}.json`, false);
+        file.open("GET", `./../config/lang/${this.language}.json`, false);
         file.onreadystatechange = function() {
             if (file.readyState == 4 && (file.status === 200 || file.status === 0)) {
-                var languageContent = JSON.parse(file.responseText);
-                var elements = document.getElementsByTagName("*");
+                let languageContent = JSON.parse(file.responseText);
+                let elements = document.getElementsByTagName("*");
 
-                for (var i = 0; i < elements.length; i++) {
-                    var element = elements[i];
-                    var key = element.getAttribute(_self.attribute);
+                for (let i = 0; i < elements.length; i++) {
+                    let element = elements[i];
+                    let key = element.getAttribute(_self.attribute);
 
                     if (key != null) {
                         element.innerHTML = languageContent[key];
@@ -30,7 +30,7 @@ function translate() {
 }
 
 function toggleTranslation(language, attribute) {
-    var translation = new translate();
+    let translation = new translate();
     translation.init(language, attribute);
     translation.process();
 }
