@@ -1,0 +1,39 @@
+{
+    "language": "Deutsch",
+
+    "index_title": "Mein Profil",
+    "index_age": "jahre alt",
+
+    "menu_profile": "Profil",
+    "menu_projects": "Projekte",
+    "menu_skills": "Fähigkeiten",
+
+    "projects_title": "Meine Projekte",
+
+    "skills_title": "Meine Fähigkeiten",
+    "skills_languages": "Bekannte Programmiersprachen",
+    "skills_experiences": "Erfahrungen",
+    "skills_experiences_1": "Etwa 4 Jahre Hobby-Programmierung",
+    "skills_experiences_2": "Ich habe Python und C# von OpenClassrooms gelernt",
+    "skills_achievements": "Erfolge",
+    "skills_achievements_1": "Lebe und existiere",
+    "skills_technologies": "Verwendete Technologien und Software",
+    "skills_technologies_1": "Betriebssysteme",
+    "skills_technologies_2": "Versionskontrolle",
+    "skills_technologies_3": "Spielentwicklung",
+    "skills_technologies_4": "IA & Datenwissenschaft",
+    "skills_technologies_5": "API",
+    "skills_technologies_6": "Codebearbeitung und IDE",
+    "skills_technologies_7": "Betriebssystem emulator",
+    "skills_technologies_8": "Zeichnen & Pixelkunst",
+    "skills_education": "Ausbildung",
+    "skills_education_1": "Abitur",
+    "skills_education_location_1": "2018 - 2020, Frankreich",
+    "skills_education_2": "Autodidaktisches Programmieren",
+    "skills_education_location_2": "2018 - 2022, Mein zuhause",
+    "skills_contact": "Email",
+
+    "404_title": "Seite nicht gefunden",
+    "404_error": "ERROR 404",
+    "404_text": "Ihre webseite wurde nicht gefunden"
+}

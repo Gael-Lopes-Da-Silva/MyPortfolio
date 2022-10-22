@@ -1,0 +1,39 @@
+{
+    "language": "中国人",
+
+    "index_title": "我的简历",
+    "index_age": "岁",
+
+    "menu_profile": "轮廓",
+    "menu_projects": "Projects",
+    "menu_skills": "Skills",
+
+    "projects_title": "My Projects",
+
+    "skills_title": "My Skills",
+    "skills_languages": "Known Programming Languages",
+    "skills_experiences": "Experiences",
+    "skills_experiences_1": "About 4 years of hobbyist programming",
+    "skills_experiences_2": "I learned Python and C# from OpenClassrooms",
+    "skills_achievements": "Achievements",
+    "skills_achievements_1": "Live and exist",
+    "skills_technologies": "Technologies & Software Used",
+    "skills_technologies_1": "Operating systems",
+    "skills_technologies_2": "Version control",
+    "skills_technologies_3": "Game development",
+    "skills_technologies_4": "IA & Data science",
+    "skills_technologies_5": "API",
+    "skills_technologies_6": "Code editing & IDE",
+    "skills_technologies_7": "OS emulator",
+    "skills_technologies_8": "Drawing & Pixel art",
+    "skills_education": "Education",
+    "skills_education_1": "High school baccalaureate",
+    "skills_education_location_1": "2018 - 2020, France",
+    "skills_education_2": "Self taught programming",
+    "skills_education_location_2": "2018 - 2022, My home",
+    "skills_contact": "Email",
+
+    "404_title": "Page not found",
+    "404_error": "ERROR 404",
+    "404_text": "your webpage has not been found"
+}
