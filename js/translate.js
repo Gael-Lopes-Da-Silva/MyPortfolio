@@ -8,7 +8,7 @@ function translate() {
         _self = this;
         let file = new XMLHttpRequest();
 
-        file.open("GET", `./../config/lang/${this.language}.json`, false);
+        file.open("GET", `./config/lang/${this.language}.json`, false);
         file.onreadystatechange = function() {
             if (file.readyState == 4 && (file.status === 200 || file.status === 0)) {
                 let languageContent = JSON.parse(file.responseText);
