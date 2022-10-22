@@ -6,8 +6,5 @@
 
 ---
 
-<!-- TODO: automatiser les repos dans projets -->
 <!-- TODO: faire un truc pour l'anniversaire -->
 <!-- TODO: ajouter la veille info -->
-<!-- TODO: mettre un systeme de coockie pour la langue -->
-<!-- TODO: finir de traduire -->
