@@ -41,7 +41,7 @@ function checkLanguage() {
     if (cookies.includes("language")) {
         let cookiesList = {};
 
-        cookie.split(';').forEach(function(element) {
+        cookies.split(';').forEach(function(element) {
             let [key,value] = element.split('=');
             cookiesList[key.trim()] = value;
         });

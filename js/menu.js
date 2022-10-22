@@ -205,7 +205,6 @@ function toggleLanguageMenu() {
         buttonOpenMenu.setAttribute("tabindex", "1");
 
         document.cookie = "language=jp; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-        console.log(document.cookie);
 
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
