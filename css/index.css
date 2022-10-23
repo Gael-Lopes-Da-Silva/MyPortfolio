@@ -354,7 +354,7 @@
         font-size: 25px;
     }
 
-    #main_infos p {
+    #main_infos div p {
         font-size: 20px;
     }
 
@@ -438,7 +438,7 @@
         font-size: 20px;
     }
 
-    #main_infos p {
+    #main_infos div p {
         font-size: 15px;
     }
 
@@ -457,7 +457,7 @@
         font-size: 15px;
     }
 
-    #main_infos p {
+    #main_infos div p {
         font-size: 10px;
     }
 }
