@@ -241,6 +241,9 @@ main {
     height: 70px;
     cursor: pointer;
     filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .language_menu_main_row img:active {
