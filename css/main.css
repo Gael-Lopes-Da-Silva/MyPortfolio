@@ -244,6 +244,7 @@ main {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    -webkit-user-drag: none;
 }
 
 .language_menu_main_row img:active {
