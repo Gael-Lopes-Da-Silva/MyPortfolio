@@ -240,6 +240,54 @@
     -webkit-user-drag: none;
 }
 
+#birthday {
+    display: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#birthday img {
+    position: fixed;
+    filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
+}
+
+#birthday.active {
+    display: block;
+}
+
+#birthday_1 {
+    width: 270px;
+    height: 270px;
+    bottom: -15px;
+    left: 10px;
+    -webkit-user-drag: none;
+}
+
+#birthday_2 {
+    width: 270px;
+    height: 270px;
+    bottom: 0;
+    right: 0;
+    -webkit-user-drag: none;
+}
+
+#birthday_3 {
+    width: 270px;
+    height: 270px;
+    top: 150px;
+    right: 150px;
+    -webkit-user-drag: none;
+}
+
+#birthday_4 {
+    width: 270px;
+    height: 270px;
+    top: 320px;
+    left: 150px;
+    -webkit-user-drag: none;
+}
+
 /* vertical responsivness */
 @media all and (max-height: 800px) {
     #profile_container {
@@ -252,7 +300,17 @@
 }
 
 /* horizontal responsivness */
-@media all and (max-width: 800px) {
+@media all and (max-width: 1200px) {
+    #birthday_3 {
+        right: 20px;
+    }
+    
+    #birthday_4 {
+        left: 20px;
+    }
+}
+
+@media(max-width: 800px) {
     #main_image img {
         width: 250px;
     }
@@ -347,6 +405,27 @@
         bottom: 0;
         left: 210px;
     }
+
+    #birthday_1 {
+        width: 150px;
+        height: 150px;
+        bottom: -8px;
+    }
+    
+    #birthday_2 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #birthday_3 {
+        width: 190px;
+        height: 190px;
+    }
+    
+    #birthday_4 {
+        width: 190px;
+        height: 190px;
+    }
 }
 
 @media(max-width: 600px) {
@@ -427,6 +506,16 @@
         bottom: 0;
         left: 130px;
     }
+    
+    #birthday_3 {
+        width: 120px;
+        height: 120px;
+    }
+    
+    #birthday_4 {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 @media(max-width: 500px) {
@@ -449,6 +538,27 @@
 
     #main_socials img {
         width: 80px;
+    }
+
+    #birthday_1 {
+        width: 110px;
+        height: 110px;
+        bottom: -6px;
+    }
+    
+    #birthday_2 {
+        width: 110px;
+        height: 110px;
+    }
+    
+    #birthday_3 {
+        width: 80px;
+        height: 80px;
+    }
+    
+    #birthday_4 {
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -473,6 +583,10 @@
     }
 
     #christmas {
+        display: none;
+    }
+
+    #birthday {
         display: none;
     }
 }

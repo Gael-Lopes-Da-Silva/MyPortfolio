@@ -6,5 +6,4 @@
 
 ---
 
-<!-- TODO: faire un truc pour l'anniversaire -->
 <!-- TODO: ajouter la veille info -->

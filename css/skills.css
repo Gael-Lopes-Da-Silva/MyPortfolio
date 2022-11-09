@@ -1,6 +1,6 @@
 html,
 body {
-    height: fit-content;
+    height: max-content;
 }
 
 #skills_container {
