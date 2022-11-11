@@ -103,7 +103,7 @@ body {
         height: 240px;
     }
 
-    .repos_row {
+    .personnal_row {
         flex-direction: column;
     }
 }
