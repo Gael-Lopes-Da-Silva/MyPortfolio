@@ -17,19 +17,27 @@ function toggleAgeCount() {
 }
 
 function toggleHollidaysCelebration() {
-    const easter = new Date(0, 4, 9);
-    const halloween = new Date(0, 10, 31);
-    const christmas = new Date(0, 12, 25);
+    const easter = new Date();
+    easter.setDate(9);
+    easter.setMonth(4 - 1);
 
-    if ((today.getDate() > easter.getDate() - 5 && today.getDate() < easter.getDate() + 5) && today.getMonth() + 1 == easter.getMonth()) {
+    const halloween = new Date();
+    halloween.setDate(31);
+    halloween.setMonth(10 - 1);
+
+    const christmas = new Date();
+    christmas.setDate(25);
+    christmas.setMonth(12 - 1);
+
+    if ((today.getDate()+1 > easter.getDate() - 5 && today.getDate()+1 < easter.getDate() + 5) && today.getMonth()+1 == easter.getMonth()+1) {
         document.querySelector("#easter").classList.add("active");
     }
 
-    if ((today.getDate() > halloween.getDate() - 5 && today.getDate() < halloween.getDate() + 5) && today.getMonth() + 1 == halloween.getMonth()) {
+    if ((today.getDate()+1 > halloween.getDate() - 5 && today.getDate()+1 < halloween.getDate() + 5) && today.getMonth()+1 == halloween.getMonth()+1) {
         document.querySelector("#halloween").classList.add("active");
     }
 
-    if ((today.getDate() > christmas.getDate() - 5 && today.getDate() < christmas.getDate() + 5) && today.getMonth() + 1 == christmas.getMonth()) {
+    if ((today.getDate()+1 > christmas.getDate() - 5 && today.getDate()+1 < christmas.getDate() + 5) && today.getMonth()+1 == christmas.getMonth()+1) {
         document.querySelector("#christmas").classList.add("active");
     }
 }
