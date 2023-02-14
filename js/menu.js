@@ -1,3 +1,10 @@
+/* 
+@author: Gael Lopes Da Silva
+@project: MyPortfolio
+@github: https://github.com/Gael-Lopes-Da-Silva/MyPortfolio
+@license: BSD 3-Clause
+*/
+
 const sideMenu = document.querySelector(".menu");
 const buttonOpenMenu = document.querySelector(".show_menu");
 const buttonHideMenu = document.querySelector(".hide_menu");
