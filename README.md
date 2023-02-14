@@ -5,10 +5,10 @@
 ---
 
 <p align="center">
-    :briefcase: This is my portfolio. I'm not a profesional so it can contain code that can be used the wrong way.
+    💼 This is my portfolio. I'm not a profesional so it can contain code that can be used the wrong way.
 </p>
 
 ---
 
-### :star: TODO
+### ⭐ TODO
 - [x] translate the portfolio
