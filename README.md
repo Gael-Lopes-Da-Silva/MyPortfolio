@@ -9,6 +9,3 @@
 </p>
 
 ---
-
-### ⭐ TODO
-- [x] translate the portfolio
