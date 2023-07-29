@@ -21,26 +21,28 @@ function loadRepositories() {
         personnalRow.classList.add("personnal_row");
 
         response.forEach(element => {
-            if (index >= 2) {
-                personnalRow = document.createElement("div");
-                personnalRow.classList.add("personnal_row");
-                index = 0;
+            if (element.name != "gael-lopes-da-silva") {
+                if (index >= 2) {
+                    personnalRow = document.createElement("div");
+                    personnalRow.classList.add("personnal_row");
+                    index = 0;
+                }
+    
+                let link = document.createElement("a");
+                link.classList.add("repo");
+                link.href = "https://github.com/" + element.full_name;
+                link.target = "_black";
+    
+                let githubRepository = document.createElement("img");
+                githubRepository.src = "https://github-readme-stats.vercel.app/api/pin/?username=" + element.owner.login + "&repo=" + element.name;
+                githubRepository.alt = element.name;
+    
+                link.appendChild(githubRepository);
+                personnalRow.appendChild(link);
+                projectsContainer.appendChild(personnalRow);
+    
+                index++;
             }
-
-            let link = document.createElement("a");
-            link.classList.add("repo");
-            link.href = "https://github.com/" + element.full_name;
-            link.target = "_black";
-
-            let githubRepository = document.createElement("img");
-            githubRepository.src = "https://github-readme-stats.vercel.app/api/pin/?username=" + element.owner.login + "&repo=" + element.name;
-            githubRepository.alt = element.name;
-
-            link.appendChild(githubRepository);
-            personnalRow.appendChild(link);
-            projectsContainer.appendChild(personnalRow);
-
-            index++;
         });
     }).catch(function(error) {
         loadingInfos.innerHTML = error;
