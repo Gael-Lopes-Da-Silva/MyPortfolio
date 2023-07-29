@@ -9,7 +9,8 @@
     "menu_skills": "Fähigkeiten",
 
     "projects_title": "Meine Projekte",
-    "projects_personnal": "Persönliche Projekte",
+    "personnal_projects": "Persönliche Projekte",
+    "loading_infos": "Laden der GitHub-Repositories...",
 
     "skills_title": "Meine Fähigkeiten",
     "skills_programming_languages": "Bekannte Programmiersprachen",

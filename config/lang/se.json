@@ -9,7 +9,8 @@
     "menu_skills": "Kompetens",
 
     "projects_title": "Mina Projekt",
-    "projects_personnal": "Personliga Projekt",
+    "personnal_projects": "Personliga Projekt",
+    "loading_infos": "Laddar GitHub-arkiven...",
 
     "skills_title": "Mina Färdigheter",
     "skills_programming_languages": "Kända Programmeringsspråk",

@@ -76,6 +76,11 @@ body {
     display: flex;
 }
 
+#loading_infos {
+    color: black;
+    font-size: 22px;
+}
+
 /* #computer_watch {
     margin: 20px;
     padding: 20px;

@@ -9,7 +9,8 @@
     "menu_skills": "Compétences",
     
     "projects_title": "Mes Projets",
-    "projects_personnal": "Projets Personnels",
+    "personnal_projects": "Projets Personnels",
+    "loading_infos": "Chargement des dépôts GitHub...",
 
     "skills_title": "Mes Compétences",
     "skills_programming_languages": "Langages de Programmation Connus",
