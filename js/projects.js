@@ -31,6 +31,7 @@ function loadRepositories() {
                 let link = document.createElement("a");
                 link.classList.add("repo");
                 link.href = "https://github.com/" + element.full_name;
+                link.title = element.name;
                 link.target = "_black";
     
                 let githubRepository = document.createElement("img");

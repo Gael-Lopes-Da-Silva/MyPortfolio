@@ -30,7 +30,16 @@
 }
 
 #main_infos {
+    color: black;
+    padding: 20px;
+    display: flex;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FCECD8;
+    border-bottom: 6px solid #DEC9AF;
+    border-radius: 15px;
+    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
 }
 
 #main_infos h3 {

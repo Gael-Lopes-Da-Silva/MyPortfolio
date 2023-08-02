@@ -40,7 +40,7 @@ function toggleSideMenu() {
     });
 
     document.addEventListener("keydown", function (event) {
-        if (event.key == " " || event.key == "ArrowLeft") {
+        if (event.key == "ArrowRight") {
             sideMenu.classList.add("active");
             languageMenu.classList.remove("active");
             buttonOpenMenu.setAttribute("tabindex", "-1");
@@ -122,7 +122,7 @@ function toggleLanguageMenu() {
     });
 
     document.addEventListener("keydown", function (event) {
-        if (event.key == "ArrowRight") {
+        if (event.key == "ArrowLeft") {
             languageMenu.classList.add("active");
             sideMenu.classList.remove("active");
             buttonOpenLanguageMenu.setAttribute("tabindex", "-1");

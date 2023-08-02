@@ -99,6 +99,11 @@ body {
         width: 280px;
     }
 
+    #personnal .repo:hover {
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
     #personnal .repo {
         margin: 5px;
     }
@@ -111,6 +116,11 @@ body {
 @media(max-width: 800px) {
     #personnal .repo img {
         width: 360px;
+    }
+
+    #personnal .repo:hover {
+        margin-bottom: 10px;
+        margin-top: 0px;
     }
 
     #personnal .personnal_infos {
