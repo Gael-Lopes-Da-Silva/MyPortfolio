@@ -13,8 +13,11 @@ const languageMenu = document.querySelector(".language_menu");
 const buttonOpenLanguageMenu = document.querySelector(".show_language_menu");
 const buttonHideLanguageMenu = document.querySelector(".hide_language_menu");
 
+const socialsContainer = document.getElementById("main_socials");
+
 function toggleSideMenu() {
     const sideMenuButtons = sideMenu.querySelectorAll("a");
+    const socialsButtons = socialsContainer.querySelectorAll("a");
 
     buttonOpenMenu.addEventListener("click", function () {
         sideMenu.classList.add("active");
@@ -22,6 +25,10 @@ function toggleSideMenu() {
         buttonOpenMenu.setAttribute("tabindex", "-1");
         buttonHideMenu.setAttribute("tabindex", "1");
         buttonOpenLanguageMenu.setAttribute("tabindex", "-1");
+
+        for (let i = 0; i < socialsButtons.length; i++) {
+            socialsButtons[i].setAttribute("tabindex", "-1");
+        }
 
         for (let i = 0; i < sideMenuButtons.length; i++) {
             sideMenuButtons[i].setAttribute("tabindex", "1");
@@ -34,28 +41,41 @@ function toggleSideMenu() {
         buttonHideMenu.setAttribute("tabindex", "-1");
         buttonOpenLanguageMenu.setAttribute("tabindex", "1");
 
+        for (let i = 0; i < socialsButtons.length; i++) {
+            socialsButtons[i].setAttribute("tabindex", "1");
+        }
+
         for (let i = 0; i < sideMenuButtons.length; i++) {
             sideMenuButtons[i].setAttribute("tabindex", "-1");
         }
     });
 
     document.addEventListener("keydown", function (event) {
-        if (event.key == "ArrowRight") {
+        if (event.key == "ArrowLeft") {
             sideMenu.classList.add("active");
             languageMenu.classList.remove("active");
             buttonOpenMenu.setAttribute("tabindex", "-1");
             buttonHideMenu.setAttribute("tabindex", "1");
             buttonOpenLanguageMenu.setAttribute("tabindex", "-1");
 
+            for (let i = 0; i < socialsButtons.length; i++) {
+                socialsButtons[i].setAttribute("tabindex", "-1");
+            }
+
             for (let i = 0; i < sideMenuButtons.length; i++) {
                 sideMenuButtons[i].setAttribute("tabindex", "1");
             }
+            buttonHideMenu.focus();
         }
         if (event.key == "Escape") {
             sideMenu.classList.remove("active");
             buttonOpenMenu.setAttribute("tabindex", "1");
             buttonHideMenu.setAttribute("tabindex", "-1");
             buttonOpenLanguageMenu.setAttribute("tabindex", "1");
+
+            for (let i = 0; i < socialsButtons.length; i++) {
+                socialsButtons[i].setAttribute("tabindex", "1");
+            }
 
             for (let i = 0; i < sideMenuButtons.length; i++) {
                 sideMenuButtons[i].setAttribute("tabindex", "-1");
@@ -69,6 +89,10 @@ function toggleSideMenu() {
             buttonHideMenu.setAttribute("tabindex", "1");
             buttonOpenLanguageMenu.setAttribute("tabindex", "-1");
 
+            for (let i = 0; i < socialsButtons.length; i++) {
+                socialsButtons[i].setAttribute("tabindex", "-1");
+            }
+
             for (let i = 0; i < sideMenuButtons.length; i++) {
                 sideMenuButtons[i].setAttribute("tabindex", "1");
             }
@@ -81,9 +105,14 @@ function toggleSideMenu() {
             buttonHideMenu.setAttribute("tabindex", "-1");
             buttonOpenLanguageMenu.setAttribute("tabindex", "1");
 
+            for (let i = 0; i < socialsButtons.length; i++) {
+                socialsButtons[i].setAttribute("tabindex", "1");
+            }
+
             for (let i = 0; i < sideMenuButtons.length; i++) {
                 sideMenuButtons[i].setAttribute("tabindex", "-1");
             }
+            buttonOpenMenu.focus();
         }
     });
 }
@@ -97,6 +126,7 @@ function toggleLanguageMenu() {
     const buttonChinese = document.querySelector(".language_chinese");
     const buttonGerman = document.querySelector(".language_german");
     const buttonSpanish = document.querySelector(".language_spanish");
+    const socialsButtons = socialsContainer.querySelectorAll("a");
     
     buttonOpenLanguageMenu.addEventListener("click", () => {
         languageMenu.classList.add("active");
@@ -104,6 +134,10 @@ function toggleLanguageMenu() {
         buttonOpenLanguageMenu.setAttribute("tabindex", "-1");
         buttonHideLanguageMenu.setAttribute("tabindex", "1");
         buttonOpenMenu.setAttribute("tabindex", "-1");
+
+        for (let i = 0; i < socialsButtons.length; i++) {
+            socialsButtons[i].setAttribute("tabindex", "-1");
+        }
 
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "1");
@@ -116,28 +150,41 @@ function toggleLanguageMenu() {
         buttonHideLanguageMenu.setAttribute("tabindex", "-1");
         buttonOpenMenu.setAttribute("tabindex", "1");
 
+        for (let i = 0; i < socialsButtons.length; i++) {
+            socialsButtons[i].setAttribute("tabindex", "1");
+        }
+
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
     });
 
     document.addEventListener("keydown", function (event) {
-        if (event.key == "ArrowLeft") {
+        if (event.key == "ArrowRight") {
             languageMenu.classList.add("active");
             sideMenu.classList.remove("active");
             buttonOpenLanguageMenu.setAttribute("tabindex", "-1");
             buttonHideLanguageMenu.setAttribute("tabindex", "1");
             buttonOpenMenu.setAttribute("tabindex", "-1");
 
+            for (let i = 0; i < socialsButtons.length; i++) {
+                socialsButtons[i].setAttribute("tabindex", "-1");
+            }
+
             for (let i = 0; i < languageButtons.length; i++) {
                 languageButtons[i].setAttribute("tabindex", "1");
             }
+            buttonHideLanguageMenu.focus();
         }
         if (event.key == "Escape") {
             languageMenu.classList.remove("active");
             buttonOpenLanguageMenu.setAttribute("tabindex", "1");
             buttonHideLanguageMenu.setAttribute("tabindex", "-1");
             buttonOpenMenu.setAttribute("tabindex", "1");
+
+            for (let i = 0; i < socialsButtons.length; i++) {
+                socialsButtons[i].setAttribute("tabindex", "1");
+            }
 
             for (let i = 0; i < languageButtons.length; i++) {
                 languageButtons[i].setAttribute("tabindex", "-1");
@@ -150,6 +197,10 @@ function toggleLanguageMenu() {
             buttonOpenLanguageMenu.setAttribute("tabindex", "-1");
             buttonHideLanguageMenu.setAttribute("tabindex", "1");
             buttonOpenMenu.setAttribute("tabindex", "-1");
+
+            for (let i = 0; i < socialsButtons.length; i++) {
+                socialsButtons[i].setAttribute("tabindex", "-1");
+            }
 
             for (let i = 0; i < languageButtons.length; i++) {
                 languageButtons[i].setAttribute("tabindex", "1");
@@ -170,9 +221,14 @@ function toggleLanguageMenu() {
             buttonHideLanguageMenu.setAttribute("tabindex", "-1");
             buttonOpenMenu.setAttribute("tabindex", "1");
 
+            for (let i = 0; i < socialsButtons.length; i++) {
+                socialsButtons[i].setAttribute("tabindex", "1");
+            }
+
             for (let i = 0; i < languageButtons.length; i++) {
                 languageButtons[i].setAttribute("tabindex", "-1");
             }
+            buttonOpenLanguageMenu.focus();
         }
     });
 
@@ -184,6 +240,10 @@ function toggleLanguageMenu() {
         buttonOpenMenu.setAttribute("tabindex", "1");
 
         document.cookie = "language=fr; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+        for (let i = 0; i < socialsButtons.length; i++) {
+            socialsButtons[i].setAttribute("tabindex", "1");
+        }
 
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
@@ -199,6 +259,10 @@ function toggleLanguageMenu() {
 
         document.cookie = "language=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
+        for (let i = 0; i < socialsButtons.length; i++) {
+            socialsButtons[i].setAttribute("tabindex", "1");
+        }
+
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
@@ -212,6 +276,10 @@ function toggleLanguageMenu() {
         buttonOpenMenu.setAttribute("tabindex", "1");
 
         document.cookie = "language=jp; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+        for (let i = 0; i < socialsButtons.length; i++) {
+            socialsButtons[i].setAttribute("tabindex", "1");
+        }
 
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
@@ -227,6 +295,10 @@ function toggleLanguageMenu() {
 
         document.cookie = "language=se; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
+        for (let i = 0; i < socialsButtons.length; i++) {
+            socialsButtons[i].setAttribute("tabindex", "1");
+        }
+
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
@@ -240,6 +312,10 @@ function toggleLanguageMenu() {
         buttonOpenMenu.setAttribute("tabindex", "1");
 
         document.cookie = "language=cn; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+        for (let i = 0; i < socialsButtons.length; i++) {
+            socialsButtons[i].setAttribute("tabindex", "1");
+        }
 
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
@@ -255,6 +331,10 @@ function toggleLanguageMenu() {
 
         document.cookie = "language=de; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
+        for (let i = 0; i < socialsButtons.length; i++) {
+            socialsButtons[i].setAttribute("tabindex", "1");
+        }
+
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
@@ -268,6 +348,10 @@ function toggleLanguageMenu() {
         buttonOpenMenu.setAttribute("tabindex", "1");
 
         document.cookie = "language=ea; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+        for (let i = 0; i < socialsButtons.length; i++) {
+            socialsButtons[i].setAttribute("tabindex", "1");
+        }
 
         for (let i = 0; i < languageButtons.length; i++) {
             languageButtons[i].setAttribute("tabindex", "-1");

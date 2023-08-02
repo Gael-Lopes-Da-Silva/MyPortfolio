@@ -73,13 +73,13 @@
     user-select: none;
 }
 
-#main_socials a {
+.main_socials_button {
     display: flex;
     margin: 10px;
     border-radius: 50px;
 }
 
-#main_socials img {
+.main_socials_button img {
     width: 100px;
     padding: 10px;
     background-color: #773366;
@@ -89,7 +89,7 @@
     -webkit-user-drag: none;
 }
 
-#main_socials img:active {
+.main_socials_button img:active {
     border-bottom: 2px solid #6B2C5B;
     margin-top: 4px;
 }
