@@ -57,6 +57,14 @@
     font-size: 25px;
 }
 
+#main_info_arrow {
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #FCECD8;
+}
+
 #main_socials {
     display: flex;
     margin-top: 70px;
@@ -305,7 +313,7 @@
 }
 
 /* vertical responsivness */
-@media all and (max-height: 800px) {
+@media all and (max-height: 850px) {
     #profile_container {
         justify-content: start;
     }
@@ -537,6 +545,12 @@
 @media(max-width: 500px) {
     #main_image img {
         width: 190px;
+    }
+
+    #main_info_arrow {
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #FCECD8;
     }
 
     #main_infos h3 {
