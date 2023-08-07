@@ -72,4 +72,4 @@ function loadRepositories() {
     }).catch(function(error) {
         console.log(error);
     });
-} // loadRepositories();
+} loadRepositories();
