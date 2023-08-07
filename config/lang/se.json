@@ -9,8 +9,10 @@
     "menu_skills": "Kompetens",
 
     "projects_title": "Mina Projekt",
-    "personnal_projects": "Personliga Projekt",
-    "loading_infos": "Laddar GitHub-arkiven...",
+    "projects_statistics": "Min GitHub-statistik",
+    "projects_personnal": "Mina Egna Projekt",
+    "projects_contributed": "Projekt som jag Bidragit Till / Forked",
+    "technology_monitoring": "Datorklocka",
 
     "skills_title": "Mina Färdigheter",
     "skills_programming_languages": "Kända Programmeringsspråk",

@@ -88,7 +88,7 @@ function toggleSideMenu() {
             buttonOpenMenu.focus();
         }
     });
-}
+} toggleSideMenu();
 
 function toggleLanguageMenu() {
     const languageButtons = languageMenu.querySelectorAll("img");
@@ -277,7 +277,4 @@ function toggleLanguageMenu() {
             languageButtons[i].setAttribute("tabindex", "-1");
         }
     });
-}
-
-toggleSideMenu();
-toggleLanguageMenu();
+} toggleLanguageMenu();

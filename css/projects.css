@@ -20,7 +20,7 @@ body {
     padding-top: 80px;
 }
 
-#personnal {
+#projects_statistics {
     margin: 20px;
     padding: 20px;
     display: flex;
@@ -32,7 +32,7 @@ body {
     box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
 }
 
-#personnal h2 {
+#projects_statistics h2 {
     width: 80%;
     color: black;
     margin-bottom: 15px;
@@ -41,47 +41,95 @@ body {
     border-bottom: 3px solid #DEC9AF;
 }
 
-#personnal .personnal_infos {
-    height: 180px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-}
-
-#personnal .repo {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 15px;
-    color: black;
-}
-
-#personnal .repo:hover {
-    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
-    background-color: #fef5eb;
-    margin-bottom: 15px;
-    margin-top: 5px;
-}
-
-#personnal .repo:active {
-    box-shadow: 0px 0px 0px rgb(28 26 23 / 40%);
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-#personnal .repo div {
-    width: 295px;
-}
-
-.personnal_row {
+#projects_statistics_container {
     display: flex;
 }
 
-#loading_infos {
-    color: black;
-    font-size: 22px;
+#projects_statistics_container img {
+    height: 200px;
 }
 
-/* #computer_watch {
+#projects_github {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FCECD8;
+    border-bottom: 6px solid #DEC9AF;
+    border-radius: 15px;
+    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
+}
+
+#projects_github h2 {
+    width: 80%;
+    color: black;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 3px solid #DEC9AF;
+}
+
+#projects_personnal {
+    display: flex;
+    flex-direction: column;
+}
+
+#projects_contributed {
+    display: flex;
+    flex-direction: column;
+}
+
+.repository {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.repository:hover {
+    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
+    background-color: #fef5eb;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+.repository:hover .repository_title {
+    text-decoration: underline;
+}
+
+.repository:active {
+    box-shadow: 0px 0px 0px rgb(28 26 23 / 40%);
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.repository:active .repository_title {
+    text-decoration: none;
+}
+
+.repository_title {
+    color: black;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.repository_title_container {
+    display: flex;
+}
+
+.repository_description {
+    color: black;
+}
+
+.repository_badges {
+    display: flex;
+}
+
+.repository_badges img {
+    margin-right: 5px;
+    height: 20px;
+}
+
+/* #technology_monitoring {
     margin: 20px;
     padding: 20px;
     display: flex;
@@ -93,77 +141,66 @@ body {
     box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
 } */
 
+/* #technology_monitoring h2 {
+    width: 80%;
+    color: black;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 3px solid #DEC9AF;
+} */
+
 /* horizontal responsivness */
 @media all and (max-width: 1050px) {
-    #personnal .repo img {
-        width: 280px;
-    }
-
-    #personnal .repo:hover {
-        margin-bottom: 10px;
-        margin-top: 0px;
-    }
-
-    #personnal .repo {
-        margin: 5px;
-    }
-
-    #personnal .personnal_infos {
-        height: 130px;
+    #projects_statistics_container img {
+        height: 150px;
     }
 }
 
 @media(max-width: 800px) {
-    #personnal .repo img {
-        width: 360px;
-    }
-
-    #personnal .repo:hover {
-        margin-bottom: 10px;
-        margin-top: 0px;
-    }
-
-    #personnal .personnal_infos {
-        height: 150px;
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-bottom: 10px;
-    }
-
-    .personnal_row {
-        flex-direction: column;
-    }
-
-    #loading_infos {
-        font-size: 18px;
+    #projects_statistics_container img {
+        height: 120px;
     }
 }
 
-@media(max-width: 500px) {    
-    #personnal .repo {
-        margin: 0px;
+@media(max-width: 670px) {
+    #projects_container h2 {
+        font-size: 20px;
+    }
+    
+    #projects_statistics_container img {
+        height: 150px;
     }
 
-    #personnal .repo:hover {
-        margin-bottom: 5px;
-        margin-top: -5px;
+    #projects_statistics_container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
-    #personnal .repo:active {
-        margin-bottom: 0px;
-        margin-top: 0px;
+    .repository_title {
+        font-size: 20px;
     }
+}
 
-    #personnal .repo img {
-        width: 270px;
+@media(max-width: 450px) {
+    #projects_container h2 {
+        font-size: 15px;
     }
-
-    #personnal .personnal_infos {
+    
+    #projects_statistics_container img {
         height: 110px;
-        margin-bottom: 5px;
     }
 
-    #loading_infos {
-        font-size: 16px;
+    .repository_title {
+        font-size: 15px;
+    }
+
+    .repository_description {
+        font-size: 10px;
+    }
+
+    .repository_badges img {
+        height: 15px;
     }
 }

@@ -9,8 +9,10 @@
     "menu_skills": "技能",
 
     "projects_title": "我的项目",
-    "personnal_projects": "个人项目",
-    "loading_infos": "正在加载 GitHub 存储库...",
+    "projects_statistics": "我的 GitHub 统计数据",
+    "projects_personnal": "我自己的项目",
+    "projects_contributed": "我贡献/分叉的项目",
+    "technology_monitoring": "钟表技术",
 
     "skills_title": "我的技能",
     "skills_programming_languages": "已知的编程语言",

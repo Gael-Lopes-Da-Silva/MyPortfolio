@@ -21,7 +21,7 @@ function toggleAgeCount() {
     } else {
         document.querySelector("#age").innerText = `${age}`;
     }
-}
+} toggleAgeCount();
 
 function toggleHollidaysCelebration() {
     const easter = new Date();
@@ -47,7 +47,4 @@ function toggleHollidaysCelebration() {
     if ((today.getDate()+1 > christmas.getDate() - 5 && today.getDate()+1 < christmas.getDate() + 5) && today.getMonth()+1 == christmas.getMonth()+1) {
         document.querySelector("#christmas").classList.add("active");
     }
-}
-
-toggleAgeCount();
-toggleHollidaysCelebration();
+} toggleHollidaysCelebration();

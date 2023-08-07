@@ -9,8 +9,10 @@
     "menu_skills": "Skills",
 
     "projects_title": "My Projects",
-    "personnal_projects": "Personal Projects",
-    "loading_infos": "Loading the GitHub repositories...",
+    "projects_statistics": "My GitHub Statistics",
+    "projects_personnal": "My Own Projects",
+    "projects_contributed": "Projects That I Contributed To / Forked",
+    "technology_monitoring": "Technology Monitoring",
 
     "skills_title": "My Skills",
     "skills_programming_languages": "Known Programming Languages",

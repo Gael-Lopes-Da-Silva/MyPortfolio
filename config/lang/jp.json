@@ -9,8 +9,10 @@
     "menu_skills": "スキル",
 
     "projects_title": "マイ プロジェクト",
-    "personnal_projects": "個人プロジェクト",
-    "loading_infos": "GitHub リポジトリをロードしています...",
+    "projects_statistics": "私の GitHub 統計",
+    "projects_personnal": "私自身のプロジェクト",
+    "projects_contributed": "私が貢献した/フォークしたプロジェクト",
+    "technology_monitoring": "コンピュータウォッチ",
 
     "skills_title": "自分のスキル",
     "skills_programming_languages": "既知の言語",
