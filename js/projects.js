@@ -7,7 +7,6 @@
 
 function loadRepositories() {
     const projectsPersonnal = document.getElementById("projects_personnal");
-    const projectsContributed = document.getElementById("projects_contributed");
     const requestURL = "https://api.github.com/users/gael-lopes-da-silva/repos";
 
     fetch(requestURL).then(function(response) {
@@ -15,6 +14,8 @@ function loadRepositories() {
         else return response.json();
     }).then(function(response) {
         for (const element of response) {
+            if (element.fork == true) continue;
+            
             var repository = document.createElement("a");
             repository.classList.add("repository");
             repository.target = "_blank";
@@ -63,11 +64,7 @@ function loadRepositories() {
             repository.appendChild(description);
             repository.appendChild(badges);
 
-            if (element.fork == false) {
-                projectsPersonnal.appendChild(repository);
-            } else {
-                projectsContributed.appendChild(repository);
-            }
+            projectsPersonnal.appendChild(repository);
         }
     }).catch(function(error) {
         console.log(error);
