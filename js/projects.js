@@ -24,12 +24,12 @@ function loadRepositories() {
             var title_container = document.createElement("div");
             title_container.classList.add("repository_title_container");
 
+            var title_icon = document.createElement("span");
+            title_icon.textContent = "📙";
+            
             var title = document.createElement("p");
             title.classList.add("repository_title");
             title.textContent = element.name;
-
-            var title_icon = document.createElement("span");
-            title_icon.textContent = "📙";
 
             title_container.appendChild(title_icon);
             title_container.appendChild(title);
@@ -41,22 +41,53 @@ function loadRepositories() {
             var badges = document.createElement("div");
             badges.classList.add("repository_badges");
 
-            // https://badgen.net/
-            var badges_stars = document.createElement("img");
-            badges_stars.src = "https://badgen.net/github/stars/" + element.full_name;
+            var badges_stars = document.createElement("div");
+            badges_stars.classList.add("badge");
+            var badges_stars_title = document.createElement("p");
+            badges_stars_title.textContent = "stars";
+            badges_stars_title.classList.add("badge_title");
+            var badges_stars_content = document.createElement("p");
+            badges_stars_content.textContent = element.stargazers_count;
+            badges_stars_content.classList.add("badge_content"); 
+            badges_stars.appendChild(badges_stars_title);
+            badges_stars.appendChild(badges_stars_content);
             badges.appendChild(badges_stars);
 
-            var badges_forks = document.createElement("img");
-            badges_forks.src = "https://badgen.net/github/forks/" + element.full_name;
+            var badges_forks = document.createElement("div");
+            badges_forks.classList.add("badge");
+            var badges_forks_title = document.createElement("p");
+            badges_forks_title.textContent = "forks";
+            badges_forks_title.classList.add("badge_title");
+            var badges_forks_content = document.createElement("p");
+            badges_forks_content.textContent = element.forks_count;
+            badges_forks_content.classList.add("badge_content"); 
+            badges_forks.appendChild(badges_forks_title);
+            badges_forks.appendChild(badges_forks_content);
             badges.appendChild(badges_forks);
 
-            var badges_watchers = document.createElement("img");
-            badges_watchers.src = "https://badgen.net/github/watchers/" + element.full_name;
+            var badges_watchers = document.createElement("div");
+            badges_watchers.classList.add("badge");
+            var badges_watchers_title = document.createElement("p");
+            badges_watchers_title.textContent = "watchers";
+            badges_watchers_title.classList.add("badge_title");
+            var badges_watchers_content = document.createElement("p");
+            badges_watchers_content.textContent = element.watchers_count;
+            badges_watchers_content.classList.add("badge_content"); 
+            badges_watchers.appendChild(badges_watchers_title);
+            badges_watchers.appendChild(badges_watchers_content);
             badges.appendChild(badges_watchers);
             
             if (element.language != null) {
-                var badges_language = document.createElement("img");
-                badges_language.src = "https://badgen.net/badge/language/" + element.language;
+                var badges_language = document.createElement("div");
+                badges_language.classList.add("badge");
+                var badges_language_title = document.createElement("p");
+                badges_language_title.textContent = "language";
+                badges_language_title.classList.add("badge_title");
+                var badges_language_content = document.createElement("p");
+                badges_language_content.textContent = element.language;
+                badges_language_content.classList.add("badge_content"); 
+                badges_language.appendChild(badges_language_title);
+                badges_language.appendChild(badges_language_content);
                 badges.appendChild(badges_language);
             }
 
