@@ -26,8 +26,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #FCECD8;
-  border-bottom: 6px solid #DEC9AF;
+  background-color: #fcecd8;
+  border-bottom: 6px solid #dec9af;
   border-radius: 15px;
   box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
 }
@@ -38,7 +38,7 @@ body {
   margin-bottom: 15px;
   padding-bottom: 10px;
   text-align: center;
-  border-bottom: 3px solid #DEC9AF;
+  border-bottom: 3px solid #dec9af;
 }
 
 #projects_statistics_container {
@@ -55,8 +55,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #FCECD8;
-  border-bottom: 6px solid #DEC9AF;
+  background-color: #fcecd8;
+  border-bottom: 6px solid #dec9af;
   border-radius: 15px;
   box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
 }
@@ -67,7 +67,7 @@ body {
   margin-bottom: 15px;
   padding-bottom: 10px;
   text-align: center;
-  border-bottom: 3px solid #DEC9AF;
+  border-bottom: 3px solid #dec9af;
 }
 
 #projects_personnal {
@@ -101,18 +101,25 @@ body {
   text-decoration: none;
 }
 
+.repository_icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+}
+
 .repository_title {
   color: black;
   font-size: 22px;
-  margin-bottom: 5px;
 }
 
 .repository_title_container {
   display: flex;
+  align-items: center;
 }
 
 .repository_description {
   color: black;
+  margin-bottom: 5px;
 }
 
 .repository_badges {
@@ -136,6 +143,7 @@ body {
   color: white;
   background-color: #242424;
   border-radius: 5px 0 0 5px;
+  font-size: 15px;
 }
 
 .badge_content {
@@ -145,6 +153,7 @@ body {
   color: white;
   background-color: #6f1451;
   border-radius: 0 5px 5px 0;
+  font-size: 15px;
 }
 
 /* #technology_monitoring {
@@ -175,13 +184,13 @@ body {
   }
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   #projects_statistics_container img {
     height: 120px;
   }
 }
 
-@media(max-width: 670px) {
+@media (max-width: 670px) {
   #projects_container h2 {
     font-size: 20px;
   }
@@ -199,15 +208,28 @@ body {
   .repository_title {
     font-size: 20px;
   }
+
+  .badge_title {
+    font-size: 13px;
+  }
+
+  .badge_content {
+    font-size: 13px;
+  }
 }
 
-@media(max-width: 450px) {
+@media (max-width: 450px) {
   #projects_container h2 {
     font-size: 15px;
   }
 
   #projects_statistics_container img {
     height: 110px;
+  }
+
+  .repository_icon {
+    width: 18px;
+    height: 18px;
   }
 
   .repository_title {
@@ -220,5 +242,13 @@ body {
 
   .repository_badges img {
     height: 15px;
+  }
+
+  .badge_title {
+    font-size: 10px;
+  }
+
+  .badge_content {
+    font-size: 10px;
   }
 }
