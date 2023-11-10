@@ -6,617 +6,623 @@
 */
 
 #profile_container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #main_image {
-    padding: 20px;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+	padding: 20px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
-#main_image img {
-    width: 300px;
-    border-radius: 250px;
-    border-bottom: 7px solid #6B2C5B;
-    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
-    -webkit-user-drag: none;
+#main_image>img {
+	width: 300px;
+	border-radius: 250px;
+	border-bottom: 7px solid #6B2C5B;
+	box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
+	-webkit-user-drag: none;
 }
 
 #main_infos {
-    color: black;
-    padding: 20px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #FCECD8;
-    border-bottom: 6px solid #DEC9AF;
-    border-radius: 15px;
-    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
+	color: black;
+	padding: 20px;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #FCECD8;
+	border-bottom: 6px solid #DEC9AF;
+	border-radius: 15px;
+	box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
 }
 
-#main_infos h3 {
-    font-size: 30px;
+#main_infos>h3 {
+	font-size: 30px;
 }
 
-#main_infos div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#main_infos>div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#main_infos div p {
-    padding: 5px;
-    font-size: 25px;
+#main_infos>div>p {
+	padding: 5px;
+	font-size: 25px;
 }
 
 #main_info_arrow {
-    width: 0; 
-    height: 0; 
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid #FCECD8;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-bottom: 30px solid #FCECD8;
 }
 
 #main_socials {
-    display: flex;
-    margin-top: 70px;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+	display: flex;
+	margin-top: 50px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+
+	background-color: #FCECD8;
+	border-bottom: 6px solid #DEC9AF;
+	border-radius: 15px;
+	box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
 }
 
 .main_socials_button {
-    display: flex;
-    margin: 10px;
-    border-radius: 50px;
+	display: flex;
+	margin: 10px;
+	border-radius: 50px;
 }
 
-.main_socials_button img {
-    width: 100px;
-    padding: 10px;
-    background-color: #773366;
-    border-bottom: 6px solid #6B2C5B;
-    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
-    border-radius: 50px;
-    -webkit-user-drag: none;
+.main_socials_button>p {
+	padding: 10px;
+	color: black;
+	background-color: #f4e1cc;
+	border-bottom: 6px solid #DEC9AF;
+	box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
+	border-radius: 15px;
+	-webkit-user-drag: none;
 }
 
-.main_socials_button img:active {
-    border-bottom: 2px solid #6B2C5B;
-    margin-top: 4px;
+.main_socials_button>p:active {
+	border-bottom: 2px solid #DEC9AF;
+	margin-top: 4px;
 }
 
 #easter {
-    display: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+	display: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
-#easter img {
-    position: fixed;
-    filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
+#easter>img {
+	position: fixed;
+	filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
 }
 
 #easter.active {
-    display: block;
+	display: block;
 }
 
 #easter_1 {
-    width: 300px;
-    height: 300px;
-    bottom: -50px;
-    left: -50px;
-    transform: rotate(25deg);
-    -webkit-user-drag: none;
+	width: 300px;
+	height: 300px;
+	bottom: -50px;
+	left: -50px;
+	transform: rotate(25deg);
+	-webkit-user-drag: none;
 }
 
 #easter_2 {
-    width: 200px;
-    height: 200px;
-    bottom: -40px;
-    right: -40px;
-    transform: rotate(-25deg);
-    -webkit-user-drag: none;
+	width: 200px;
+	height: 200px;
+	bottom: -40px;
+	right: -40px;
+	transform: rotate(-25deg);
+	-webkit-user-drag: none;
 }
 
 #easter_3 {
-    width: 130px;
-    height: 130px;
-    bottom: -40px;
-    right: 90px;
-    transform: rotate(-10deg);
-    -webkit-user-drag: none;
+	width: 130px;
+	height: 130px;
+	bottom: -40px;
+	right: 90px;
+	transform: rotate(-10deg);
+	-webkit-user-drag: none;
 }
 
 #easter_4 {
-    width: 170px;
-    height: 170px;
-    bottom: -50px;
-    left: 130px;
-    transform: rotate(5deg);
-    -webkit-user-drag: none;
+	width: 170px;
+	height: 170px;
+	bottom: -50px;
+	left: 130px;
+	transform: rotate(5deg);
+	-webkit-user-drag: none;
 }
 
 #halloween {
-    display: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+	display: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
-#halloween img {
-    position: fixed;
-    filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
+#halloween>img {
+	position: fixed;
+	filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
 }
 
 #halloween.active {
-    display: block;
+	display: block;
 }
 
 #halloween_1 {
-    width: 200px;
-    height: 200px;
-    top: 50px;
-    right: -30px;
-    transform: rotate(-140deg);
-    -webkit-user-drag: none;
+	width: 200px;
+	height: 200px;
+	top: 50px;
+	right: -30px;
+	transform: rotate(-140deg);
+	-webkit-user-drag: none;
 }
 
 #halloween_2 {
-    width: 200px;
-    height: 200px;
-    top: 72px;
-    left: -10px;
-    -webkit-user-drag: none;
+	width: 200px;
+	height: 200px;
+	top: 72px;
+	left: -10px;
+	-webkit-user-drag: none;
 }
 
 #halloween_3 {
-    width: 200px;
-    height: 200px;
-    bottom: 0;
-    right: 0;
-    -webkit-user-drag: none;
+	width: 200px;
+	height: 200px;
+	bottom: 0;
+	right: 0;
+	-webkit-user-drag: none;
 }
 
 #halloween_4 {
-    width: 300px;
-    height: 300px;
-    bottom: -30px;
-    left: -50px;
-    transform: rotate(25deg);
-    -webkit-user-drag: none;
+	width: 300px;
+	height: 300px;
+	bottom: -30px;
+	left: -50px;
+	transform: rotate(25deg);
+	-webkit-user-drag: none;
 }
 
 #christmas {
-    display: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+	display: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
-#christmas img {
-    position: fixed;
-    filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
+#christmas>img {
+	position: fixed;
+	filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
 }
 
 #christmas.active {
-    display: block;
+	display: block;
 }
 
 #christmas_1 {
-    width: 400px;
-    height: 400px;
-    bottom: -10px;
-    left: -60px;
-    transform: rotate(-5deg);
-    -webkit-user-drag: none;
+	width: 400px;
+	height: 400px;
+	bottom: -10px;
+	left: -60px;
+	transform: rotate(-5deg);
+	-webkit-user-drag: none;
 }
 
 #christmas_2 {
-    width: 200px;
-    height: 200px;
-    top: 60px;
-    left: -20px;
-    transform: rotate(-20deg);
-    -webkit-user-drag: none;
+	width: 200px;
+	height: 200px;
+	top: 60px;
+	left: -20px;
+	transform: rotate(-20deg);
+	-webkit-user-drag: none;
 }
 
 #christmas_3 {
-    width: 300px;
-    height: 300px;
-    bottom: -10px;
-    right: 80px;
-    transform: rotate(-5deg);
-    -webkit-user-drag: none;
+	width: 300px;
+	height: 300px;
+	bottom: -10px;
+	right: 80px;
+	transform: rotate(-5deg);
+	-webkit-user-drag: none;
 }
 
 #christmas_4 {
-    width: 120px;
-    height: 120px;
-    bottom: 0;
-    left: 200px;
-    -webkit-user-drag: none;
+	width: 120px;
+	height: 120px;
+	bottom: 0;
+	left: 200px;
+	-webkit-user-drag: none;
 }
 
 #christmas_5 {
-    width: 100px;
-    height: 100px;
-    bottom: 0;
-    left: 280px;
-    -webkit-user-drag: none;
+	width: 100px;
+	height: 100px;
+	bottom: 0;
+	left: 280px;
+	-webkit-user-drag: none;
 }
 
 #christmas_6 {
-    width: 200px;
-    height: 200px;
-    bottom: -20px;
-    right: -40px;
-    transform: rotate(-10deg);
-    -webkit-user-drag: none;
+	width: 200px;
+	height: 200px;
+	bottom: -20px;
+	right: -40px;
+	transform: rotate(-10deg);
+	-webkit-user-drag: none;
 }
 
 #birthday {
-    display: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+	display: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
-#birthday img {
-    position: fixed;
-    filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
+#birthday>img {
+	position: fixed;
+	filter: drop-shadow(0px 3px 2px rgb(28 26 23 / 40%));
 }
 
 #birthday.active {
-    display: block;
+	display: block;
 }
 
 #birthday_1 {
-    width: 270px;
-    height: 270px;
-    bottom: -15px;
-    left: 10px;
-    -webkit-user-drag: none;
+	width: 270px;
+	height: 270px;
+	bottom: -15px;
+	left: 10px;
+	-webkit-user-drag: none;
 }
 
 #birthday_2 {
-    width: 270px;
-    height: 270px;
-    bottom: 0;
-    right: 0;
-    -webkit-user-drag: none;
+	width: 270px;
+	height: 270px;
+	bottom: 0;
+	right: 0;
+	-webkit-user-drag: none;
 }
 
 #birthday_3 {
-    width: 270px;
-    height: 270px;
-    top: 150px;
-    right: 150px;
-    -webkit-user-drag: none;
+	width: 270px;
+	height: 270px;
+	top: 150px;
+	right: 150px;
+	-webkit-user-drag: none;
 }
 
 #birthday_4 {
-    width: 270px;
-    height: 270px;
-    top: 320px;
-    left: 150px;
-    -webkit-user-drag: none;
+	width: 270px;
+	height: 270px;
+	top: 320px;
+	left: 150px;
+	-webkit-user-drag: none;
 }
 
 /* vertical responsivness */
 @media all and (max-height: 850px) {
-    #profile_container {
-        justify-content: start;
-    }
+	#profile_container {
+		justify-content: start;
+	}
 
-    #main_image {
-        margin-top: 90px;
-    }
+	#main_image {
+		margin-top: 90px;
+	}
 }
 
 /* horizontal responsivness */
 @media all and (max-width: 1200px) {
-    #birthday_3 {
-        right: 20px;
-    }
-    
-    #birthday_4 {
-        left: 20px;
-    }
+	#birthday_3 {
+		right: 20px;
+	}
+
+	#birthday_4 {
+		left: 20px;
+	}
 }
 
 @media(max-width: 800px) {
-    #main_image img {
-        width: 250px;
-    }
+	#main_image>img {
+		width: 250px;
+	}
 
-    #easter_1 {
-        width: 260px;
-        height: 260px;
-        bottom: -60px;
-        left: -60px;
-    }
+	#easter_1 {
+		width: 260px;
+		height: 260px;
+		bottom: -60px;
+		left: -60px;
+	}
 
-    #easter_2 {
-        width: 180px;
-        height: 180px;
-        bottom: -50px;
-        right: -50px;
-    }
+	#easter_2 {
+		width: 180px;
+		height: 180px;
+		bottom: -50px;
+		right: -50px;
+	}
 
-    #easter_3 {
-        width: 110px;
-        height: 110px;
-        bottom: -40px;
-        right: 70px;
-    }
+	#easter_3 {
+		width: 110px;
+		height: 110px;
+		bottom: -40px;
+		right: 70px;
+	}
 
-    #easter_4 {
-        width: 150px;
-        height: 150px;
-        bottom: -50px;
-        left: 100px;
-    }
+	#easter_4 {
+		width: 150px;
+		height: 150px;
+		bottom: -50px;
+		left: 100px;
+	}
 
-    #halloween_1 {
-        width: 180px;
-        height: 180px;
-        top: 50px;
-        right: -30px;
-    }
+	#halloween_1 {
+		width: 180px;
+		height: 180px;
+		top: 50px;
+		right: -30px;
+	}
 
-    #halloween_2 {
-        width: 180px;
-        height: 180px;
-        top: 72px;
-        left: -10px;
-    }
+	#halloween_2 {
+		width: 180px;
+		height: 180px;
+		top: 72px;
+		left: -10px;
+	}
 
-    #halloween_3 {
-        width: 100px;
-        height: 100px;
-        bottom: 0;
-        right: 0;
-    }
-    
-    #halloween_4 {
-        width: 200px;
-        height: 200px;
-        bottom: -30px;
-        left: -30px;
-    }
-    
-    #christmas_1 {
-        width: 300px;
-        height: 300px;
-        bottom: -10px;
-        left: -60px;
-    }
+	#halloween_3 {
+		width: 100px;
+		height: 100px;
+		bottom: 0;
+		right: 0;
+	}
 
-    #christmas_2 {
-        width: 150px;
-        height: 150px;
-        top: 60px;
-        left: -20px;
-    }
+	#halloween_4 {
+		width: 200px;
+		height: 200px;
+		bottom: -30px;
+		left: -30px;
+	}
 
-    #christmas_3 {
-        width: 100px;
-        height: 100px;
-        bottom: -10px;
-        right: 80px;
-    }
+	#christmas_1 {
+		width: 300px;
+		height: 300px;
+		bottom: -10px;
+		left: -60px;
+	}
 
-    #christmas_4 {
-        width: 80px;
-        height: 80px;
-        bottom: 0;
-        left: 160px;
-    }
+	#christmas_2 {
+		width: 150px;
+		height: 150px;
+		top: 60px;
+		left: -20px;
+	}
 
-    #christmas_5 {
-        width: 60px;
-        height: 60px;
-        bottom: 0;
-        left: 210px;
-    }
+	#christmas_3 {
+		width: 100px;
+		height: 100px;
+		bottom: -10px;
+		right: 80px;
+	}
 
-    #birthday_1 {
-        width: 150px;
-        height: 150px;
-        bottom: -8px;
-    }
-    
-    #birthday_2 {
-        width: 150px;
-        height: 150px;
-    }
-    
-    #birthday_3 {
-        width: 190px;
-        height: 190px;
-    }
-    
-    #birthday_4 {
-        width: 190px;
-        height: 190px;
-    }
+	#christmas_4 {
+		width: 80px;
+		height: 80px;
+		bottom: 0;
+		left: 160px;
+	}
+
+	#christmas_5 {
+		width: 60px;
+		height: 60px;
+		bottom: 0;
+		left: 210px;
+	}
+
+	#birthday_1 {
+		width: 150px;
+		height: 150px;
+		bottom: -8px;
+	}
+
+	#birthday_2 {
+		width: 150px;
+		height: 150px;
+	}
+
+	#birthday_3 {
+		width: 190px;
+		height: 190px;
+	}
+
+	#birthday_4 {
+		width: 190px;
+		height: 190px;
+	}
 }
 
 @media(max-width: 600px) {
-    #main_infos h3 {
-        font-size: 25px;
-    }
+	#main_infos>h3 {
+		font-size: 25px;
+	}
 
-    #main_infos div p {
-        font-size: 20px;
-    }
+	#main_infos>div>p {
+		font-size: 20px;
+	}
 
-    #easter_1 {
-        width: 220px;
-        height: 220px;
-        bottom: -60px;
-        left: -60px;
-    }
+	#easter_1 {
+		width: 220px;
+		height: 220px;
+		bottom: -60px;
+		left: -60px;
+	}
 
-    #easter_2 {
-        width: 180px;
-        height: 180px;
-        bottom: -50px;
-        right: -50px;
-    }
+	#easter_2 {
+		width: 180px;
+		height: 180px;
+		bottom: -50px;
+		right: -50px;
+	}
 
-    #easter_3 {
-        width: 110px;
-        height: 110px;
-        bottom: -40px;
-        right: 70px;
-    }
+	#easter_3 {
+		width: 110px;
+		height: 110px;
+		bottom: -40px;
+		right: 70px;
+	}
 
-    #easter_4 {
-        width: 130px;
-        height: 130px;
-        bottom: -50px;
-        left: 70px;
-    }
+	#easter_4 {
+		width: 130px;
+		height: 130px;
+		bottom: -50px;
+		left: 70px;
+	}
 
-    #halloween_1 {
-        width: 130px;
-        height: 130px;
-        top: 60px;
-        right: -20px;
-    }
+	#halloween_1 {
+		width: 130px;
+		height: 130px;
+		top: 60px;
+		right: -20px;
+	}
 
-    #halloween_2 {
-        width: 130px;
-        height: 130px;
-        top: 75px;
-        left: -6px;
-    }
+	#halloween_2 {
+		width: 130px;
+		height: 130px;
+		top: 75px;
+		left: -6px;
+	}
 
-    #christmas_1 {
-        width: 200px;
-        height: 200px;
-        bottom: -10px;
-        left: -40px;
-    }
+	#christmas_1 {
+		width: 200px;
+		height: 200px;
+		bottom: -10px;
+		left: -40px;
+	}
 
-    #christmas_2 {
-        width: 120px;
-        height: 120px;
-        top: 70px;
-        left: -10px;
-    }
+	#christmas_2 {
+		width: 120px;
+		height: 120px;
+		top: 70px;
+		left: -10px;
+	}
 
-    #christmas_4 {
-        width: 50px;
-        height: 50px;
-        bottom: 0;
-        left: 100px;
-    }
+	#christmas_4 {
+		width: 50px;
+		height: 50px;
+		bottom: 0;
+		left: 100px;
+	}
 
-    #christmas_5 {
-        width: 30px;
-        height: 30px;
-        bottom: 0;
-        left: 130px;
-    }
-    
-    #birthday_3 {
-        width: 120px;
-        height: 120px;
-    }
-    
-    #birthday_4 {
-        width: 120px;
-        height: 120px;
-    }
+	#christmas_5 {
+		width: 30px;
+		height: 30px;
+		bottom: 0;
+		left: 130px;
+	}
+
+	#birthday_3 {
+		width: 120px;
+		height: 120px;
+	}
+
+	#birthday_4 {
+		width: 120px;
+		height: 120px;
+	}
 }
 
 @media(max-width: 500px) {
-    #main_image img {
-        width: 190px;
-    }
+	#main_image>img {
+		width: 190px;
+	}
 
-    #main_info_arrow {
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-bottom: 20px solid #FCECD8;
-    }
+	#main_info_arrow {
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 20px solid #FCECD8;
+	}
 
-    #main_infos h3 {
-        font-size: 20px;
-    }
+	#main_infos>h3 {
+		font-size: 20px;
+	}
 
-    #main_infos div p {
-        font-size: 15px;
-    }
+	#main_infos>div>p {
+		font-size: 15px;
+	}
 
-    #main_socials {
-        display: flex;
-        flex-direction: column;
-    }
+	#main_socials {
+		display: flex;
+		flex-direction: column;
+	}
 
-    #main_socials img {
-        width: 80px;
-    }
+	#main_socials>p {
+		text-align: center;
+		width: 100%;
+	}
 
-    #birthday_1 {
-        width: 110px;
-        height: 110px;
-        bottom: -6px;
-    }
-    
-    #birthday_2 {
-        width: 110px;
-        height: 110px;
-    }
-    
-    #birthday_3 {
-        width: 80px;
-        height: 80px;
-    }
-    
-    #birthday_4 {
-        width: 80px;
-        height: 80px;
-    }
+	#birthday_1 {
+		width: 110px;
+		height: 110px;
+		bottom: -6px;
+	}
+
+	#birthday_2 {
+		width: 110px;
+		height: 110px;
+	}
+
+	#birthday_3 {
+		width: 80px;
+		height: 80px;
+	}
+
+	#birthday_4 {
+		width: 80px;
+		height: 80px;
+	}
 }
 
 @media(max-width: 400px) {
-    #main_infos h3 {
-        font-size: 15px;
-    }
+	#main_infos>h3 {
+		font-size: 15px;
+	}
 
-    #main_infos div p {
-        font-size: 10px;
-    }
+	#main_infos>div>p {
+		font-size: 10px;
+	}
 }
 
 /* horizontal and vertical responsivness */
 @media (max-height: 700px) and (max-width: 500px) {
-    #easter {
-        display: none;
-    }
+	#easter {
+		display: none;
+	}
 
-    #halloween {
-        display: none;
-    }
+	#halloween {
+		display: none;
+	}
 
-    #christmas {
-        display: none;
-    }
+	#christmas {
+		display: none;
+	}
 
-    #birthday {
-        display: none;
-    }
+	#birthday {
+		display: none;
+	}
 }
