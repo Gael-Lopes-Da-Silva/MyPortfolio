@@ -80,13 +80,10 @@
 
 .main_socials_button {
 	display: flex;
-	margin: 10px;
-	border-radius: 50px;
-}
-
-.main_socials_button>p {
+	margin: 8px;
 	padding: 10px;
 	color: black;
+	border-radius: 50px;
 	background-color: #f4e1cc;
 	border-bottom: 6px solid #DEC9AF;
 	box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
@@ -94,9 +91,14 @@
 	-webkit-user-drag: none;
 }
 
-.main_socials_button>p:active {
+.main_socials_button:active {
 	border-bottom: 2px solid #DEC9AF;
-	margin-top: 4px;
+	margin-top: 12px;
+}
+
+.main_socials_button>img {
+	width: 40px;
+	height: 40px;
 }
 
 #easter {
@@ -566,9 +568,9 @@
 		font-size: 15px;
 	}
 
-	#main_socials {
-		display: flex;
-		flex-direction: column;
+	.main_socials_button>img {
+		width: 25px;
+		height: 25px;
 	}
 
 	#main_socials>p {
@@ -605,6 +607,11 @@
 
 	#main_infos>div>p {
 		font-size: 10px;
+	}
+
+	.main_socials_button>img {
+		width: 18px;
+		height: 18px;
 	}
 }
 

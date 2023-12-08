@@ -16,18 +16,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="This is my portfolio.">
 
-	<link rel="icon" type="image/ico" href="img/icons/skills.ico">
-	<link rel="icon" type="image/svg+png" href="img/icons/skills.png">
-	<link rel="apple-touch-icon" type="image/svg+png" href="img/icons/skills.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="./img/favicons/site.webmanifest">
 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/skills.css">
 </head>
 
 <body>
-	<!-- header of the website -->
 	<header>
-		<div class="navbar show_menu" tabindex="1">
+		<div class="navbar show_navigation_menu" tabindex="1">
 			<span class="bar"></span>
 			<span class="bar"></span>
 			<span class="bar"></span>
@@ -36,7 +36,6 @@
 		<p ltag="language" class="language show_language_menu" tabindex="1"></p>
 	</header>
 
-	<!-- main part of the website -->
 	<main>
 		<div id="skills_container">
 			<div class="skills_section">
@@ -82,35 +81,35 @@
 					<ul>
 						<li>
 							<b ltag="skills_technologies_1"></b><br>
-							Windows, Linux (fedora, debian, ubuntu, manjaro...)
+							<p>Windows, Linux</p>
 						</li>
 						<li>
 							<b ltag="skills_technologies_2"></b><br>
-							Github, BitBucket
+							<p>Github, GitLab, BitBucket</p>
 						</li>
 						<li>
 							<b ltag="skills_technologies_3"></b><br>
-							Unity, Unreal Engine, Godot, Stride, Raylib, Monogame
+							<p>Unity, Godot, Stride, Raylib, Monogame</p>
 						</li>
 						<li>
 							<b ltag="skills_technologies_4"></b><br>
-							Matplotlib, NumPy, Arraymancer
+							<p>Matplotlib, NumPy, Arraymancer</p>
 						</li>
 						<li>
 							<b ltag="skills_technologies_5"></b><br>
-							Discord.net
+							<p>Discord.net</p>
 						</li>
 						<li>
 							<b ltag="skills_technologies_6"></b><br>
-							Visual Studio Code, Visual Studio, Atom, Sublim Text, Emacs
+							<p>Visual Studio Code, Visual Studio, Android Studio</p>
 						</li>
 						<li>
 							<b ltag="skills_technologies_7"></b><br>
-							VirtualBox, VMware, Qemu
+							<p>VirtualBox, VMware, Qemu</p>
 						</li>
 						<li>
 							<b ltag="skills_technologies_8"></b><br>
-							Paint.net, Aseprite
+							<p>Photoshop, Paint.net, Blender, PenPot</p>
 						</li>
 					</ul>
 				</div>
@@ -145,25 +144,26 @@
 		</div>
 	</main>
 
-	<!-- navigation menu of the website -->
-	<nav class="menu">
-		<div class="menu_header">
-			<div class="navbar hide_menu">
+	<!-- navigation menu -->
+	<nav class="navigation_menu">
+		<div class="navigation_menu_header">
+			<div class="navbar hide_navigation_menu">
 				<span class="bar"></span>
 				<span class="bar"></span>
 				<span class="bar"></span>
 			</div>
 		</div>
-		<div class="menu_buttons">
-			<a href="index.html" ltag="menu_profile" class="unselected" tabindex="-1"></a>
-			<a href="projects.html" ltag="menu_projects" class="unselected" tabindex="-1"></a>
-			<a href="#" ltag="menu_skills" class="selected" tabindex="-1"></a>
+		<div class="navigation_menu_buttons">
+			<a href="index.html" ltag="navigation_menu_profile" class="unselected" tabindex="-1"></a>
+			<a href="projects.html" ltag="navigation_menu_projects" class="unselected" tabindex="-1"></a>
+			<a href="#" ltag="navigation_menu_skills" class="selected" tabindex="-1"></a>
 		</div>
-		<div class="menu_footer">
+		<div class="navigation_menu_footer">
 			<a href="https://github.com/Gael-Lopes-Da-Silva/MyPortfolio/blob/59d22e90e71fcf182db625bb7dc091da180f2991/LICENSE.md"
 				target="_blank">&copy; 2023 Gaël Lopes Da Silva</a>
 		</div>
 	</nav>
+	<script src="js/navigationMenu.js"></script>
 
 	<!-- language menu -->
 	<nav class="language_menu">
@@ -190,8 +190,8 @@
 			</div>
 		</div>
 	</nav>
+	<script src="js/languageMenu.js"></script>
 
-	<script src="js/menu.js"></script>
 	<script src="js/translate.js"></script>
 </body>
 

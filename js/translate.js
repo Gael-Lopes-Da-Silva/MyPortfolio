@@ -14,8 +14,8 @@ function translate() {
 	this.process = function () {
 		_self = this;
 		let file = new XMLHttpRequest();
-
-		file.open("GET", `./config/lang/${this.language}.json`, false);
+		
+		file.open("GET", `./config/languages.json`, false);
 		file.onreadystatechange = function () {
 			if (file.readyState == 4 && (file.status === 200 || file.status === 0)) {
 				let languageContent = JSON.parse(file.responseText);
@@ -26,7 +26,7 @@ function translate() {
 					let key = element.getAttribute(_self.attribute);
 
 					if (key != null) {
-						element.innerHTML = languageContent[key];
+						element.innerHTML = languageContent[_self.language][key];
 					}
 				}
 			}
@@ -42,7 +42,7 @@ function toggleTranslation(language, attribute) {
 	translation.process();
 }
 
-function checkLanguage() {
+{
 	let cookies = document.cookie;
 
 	if (cookies.includes("language")) {
@@ -55,7 +55,7 @@ function checkLanguage() {
 
 		toggleTranslation(cookiesList["language"], "ltag");
 	} else {
-		document.cookie = "language=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-		toggleTranslation("en", "ltag");
+		document.cookie = "language=english; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+		toggleTranslation("english", "ltag");
 	}
-} checkLanguage();
+}
