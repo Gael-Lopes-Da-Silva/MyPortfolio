@@ -9,12 +9,16 @@
 	const projectsPersonnal = document.getElementById("projects_personnal");
 	const requestURL = "https://api.github.com/users/gael-lopes-da-silva/repos";
 
+	projectsPersonnal.innerHTML = "<div class='loader'></div>";
+
 	fetch(requestURL)
 		.then(function (response) {
-			if (!response.ok) throw new Error("unable to load github repositories");
+			if (!response.ok) projectsPersonnal.innerHTML = "<h3>Unable to load github repositories</h3>";
 			else return response.json();
 		})
 		.then(function (response) {
+			projectsPersonnal.innerHTML = "";
+
 			for (const element of response) {
 				if (element.fork == true) continue;
 

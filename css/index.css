@@ -325,8 +325,8 @@
 		justify-content: start;
 	}
 
-	#main_image {
-		margin-top: 90px;
+	main {
+		padding-top: 80px;
 	}
 }
 

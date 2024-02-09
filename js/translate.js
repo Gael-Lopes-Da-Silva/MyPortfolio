@@ -5,46 +5,45 @@
 @license: BSD 3-Clause
 */
 
-function translate() {
-	this.init = function (language, attribute) {
-		this.attribute = attribute;
-		this.language = language;
-	}
+{
+	function translate() {
+		this.init = function (language, attribute) {
+			this.attribute = attribute;
+			this.language = language;
+		}
 
-	this.process = function () {
-		_self = this;
-		let file = new XMLHttpRequest();
-		
-		file.open("GET", `./config/languages.json`, false);
-		file.onreadystatechange = function () {
-			if (file.readyState == 4 && (file.status === 200 || file.status === 0)) {
-				let languageContent = JSON.parse(file.responseText);
-				let elements = document.getElementsByTagName("*");
+		this.process = function () {
+			_self = this;
+			let file = new XMLHttpRequest();
 
-				for (let i = 0; i < elements.length; i++) {
-					let element = elements[i];
-					let key = element.getAttribute(_self.attribute);
+			file.open("GET", `./config/languages.json`, false);
+			file.onreadystatechange = function () {
+				if (file.readyState == 4 && (file.status === 200 || file.status === 0)) {
+					let languageContent = JSON.parse(file.responseText);
+					let elements = document.getElementsByTagName("*");
 
-					if (key != null) {
-						element.innerHTML = languageContent[_self.language][key];
+					for (let i = 0; i < elements.length; i++) {
+						let element = elements[i];
+						let key = element.getAttribute(_self.attribute);
+
+						if (key != null) {
+							element.innerHTML = languageContent[_self.language][key];
+						}
 					}
 				}
 			}
+
+			file.send();
 		}
-
-		file.send();
 	}
-}
 
-function toggleTranslation(language, attribute) {
-	let translation = new translate();
-	translation.init(language, attribute);
-	translation.process();
-}
+	function toggleTranslation(language, attribute) {
+		let translation = new translate();
+		translation.init(language, attribute);
+		translation.process();
+	}
 
-{
 	let cookies = document.cookie;
-
 	if (cookies.includes("language")) {
 		let cookiesList = {};
 

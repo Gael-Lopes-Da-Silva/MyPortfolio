@@ -43,7 +43,9 @@
 		"skills_contact": "Email",
 		"404_title": "Page not found",
 		"404_error": "ERROR 404",
-		"404_text": "your webpage has not been found"
+		"404_text": "your webpage has not been found",
+		"terminal_title": "Terminal",
+		"navigation_menu_terminal": "Terminal"
 	},
 	"french": {
 		"language": "Français",

@@ -33,13 +33,17 @@
 }
 
 /* vertical responsivness */
-@media all and (max-height: 600px) {
+@media all and (max-height: 700px) {
 	#error_container {
 		justify-content: start;
 	}
 
+	main {
+		padding-top: 80px;
+	}
+
 	#error_container>img {
-		margin-top: 100px;
+		margin-top: 20px;
 	}
 }
 

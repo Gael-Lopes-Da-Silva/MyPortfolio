@@ -1,0 +1,144 @@
+/* 
+@author: Gael Lopes Da Silva
+@project: MyPortfolio
+@github: https://github.com/Gael-Lopes-Da-Silva/MyPortfolio
+@license: BSD 3-Clause
+*/
+
+main {
+	padding-top: 80px;
+}
+
+#terminal_container {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	display: flex;
+	align-items: start;
+	justify-content: start;
+	flex-direction: column;
+	overflow-y: auto;
+
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+#terminal_container::-webkit-scrollbar {
+	display: none;
+}
+
+#terminal_output {
+	width: 100%;
+	word-break: break-all;
+}
+
+#terminal_output>p {
+	width: 100%;
+	line-height: 27px;
+	font-size: 20px;
+	word-break: break-all;
+	display: flex;
+}
+
+#terminal_output>p>b>a {
+	text-decoration: underline;
+	color: #c1c1c1;
+	cursor: pointer;
+}
+
+#terminal_input_area {
+	width: 100%;
+}
+
+#terminal_input_header {
+	height: 27px;
+	line-height: 27px;
+	width: 100%;
+	font-size: 20px;
+	color: cyan;
+}
+
+#terminal_input_area>div {
+	display: flex;
+	align-items: center;
+}
+
+#terminal_input_prompt {
+	height: 27px;
+	line-height: 27px;
+	margin-right: 10px;
+	color: #00FF00;
+	font-size: 20px;
+}
+
+#terminal_input {
+	height: 27px;
+	line-height: 27px;
+	width: 100%;
+	font-size: 20px;
+	color: yellow;
+	background-color: transparent;
+	border: none;
+	cursor: default;
+}
+
+#terminal_input:focus {
+	outline: none;
+}
+
+.terminal_output_area {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.terminal_output_header {
+	height: 27px;
+	line-height: 27px;
+	width: 100%;
+	font-size: 20px;
+	color: cyan;
+}
+
+.terminal_output_area>div {
+	display: flex;
+}
+
+.terminal_output_area>p {
+	width: 100%;
+	line-height: 27px;
+	font-size: 20px;
+	word-break: break-all;
+	display: flex;
+}
+
+.terminal_output_area>p>b {
+	color: #c1c1c1;
+	width: 250px;
+}
+
+.terminal_output_area>p>b>a {
+	color: #c1c1c1;
+	text-decoration: underline;
+}
+
+.terminal_output_area>p>a {
+	color: #c1c1c1;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.terminal_output_prompt {
+	line-height: 27px;
+	margin-right: 10px;
+	color: #00FF00;
+	font-size: 20px;
+}
+
+.terminal_output_input {
+	width: 100%;
+	line-height: 27px;
+	font-size: 20px;
+	color: yellow;
+	word-break: break-all;
+}
