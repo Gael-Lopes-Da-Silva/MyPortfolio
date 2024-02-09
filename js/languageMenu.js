@@ -17,6 +17,7 @@
 	const chinese = document.querySelector(".language_chinese");
 	const german = document.querySelector(".language_german");
 	const spanish = document.querySelector(".language_spanish");
+	const korean = document.querySelector(".language_korean");
 
 	showLanguageMenu.addEventListener("click", () => {
 		languageMenu.classList.add("active");
@@ -164,6 +165,19 @@
 		hideLanguageMenu.setAttribute("tabindex", "-1");
 
 		document.cookie = "language=spanish; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+		for (let i = 0; i < languageMenuButtons.length; i++) {
+			languageMenuButtons[i].setAttribute("tabindex", "-1");
+		}
+	});
+
+	korean.addEventListener("click", () => {
+		toggleTranslation('korean', 'ltag');
+		languageMenu.classList.remove("active");
+		showLanguageMenu.setAttribute("tabindex", "1");
+		hideLanguageMenu.setAttribute("tabindex", "-1");
+
+		document.cookie = "language=korean; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
 		for (let i = 0; i < languageMenuButtons.length; i++) {
 			languageMenuButtons[i].setAttribute("tabindex", "-1");
