@@ -43,14 +43,10 @@ main {
 	color: black;
 }
 
-#contact {
+#skills_internships {
 	padding: 10px;
 	text-align: center;
-}
-
-#contact>p {
-	color: black;
-	margin: 20px;
+	margin: 20px 160px;
 	padding: 20px 50px;
 	font-size: 17px;
 	background-color: #FCECD8;
@@ -59,11 +55,23 @@ main {
 	border-radius: 15px;
 }
 
-#contact>p>a {
+#skills_internships>h2 {
+	color: black;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	text-align: center;
+	border-bottom: 3px solid #DEC9AF;
+}
+
+#skills_internships>p {
 	color: black;
 }
 
-#contact>p>a:hover {
+#skills_internships>p>a {
+	color: black;
+}
+
+#skills_internships>p>a:hover {
 	text-decoration: underline;
 }
 

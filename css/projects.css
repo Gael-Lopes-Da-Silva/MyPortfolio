@@ -162,26 +162,26 @@ main {
 	}
 }
 
-/* #technology_monitoring {
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #FCECD8;
-    border-bottom: 6px solid #DEC9AF;
-    border-radius: 15px;
-    box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
-} */
+#technology_monitoring {
+	margin: 20px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #FCECD8;
+	border-bottom: 6px solid #DEC9AF;
+	border-radius: 15px;
+	box-shadow: 0px 3px 2px rgb(28 26 23 / 40%);
+}
 
-/* #technology_monitoring h2 {
-    width: 80%;
-    color: black;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    text-align: center;
-    border-bottom: 3px solid #DEC9AF;
-} */
+#technology_monitoring h2 {
+	width: 80%;
+	color: black;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	text-align: center;
+	border-bottom: 3px solid #DEC9AF;
+}
 
 /* horizontal responsivness */
 @media all and (max-width: 1050px) {
